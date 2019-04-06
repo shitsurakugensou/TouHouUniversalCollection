@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,11 @@
 */
 
 Route::get('/', function () {
-    return view("home.home");
+    return view("pages.home");
 });
+
+Route::prefix("/view/resources")->group(function (){
+    Route::get('/games', "Resources\GamesController@show");
+});
+
+

@@ -16,7 +16,7 @@
 
 @section("content")
 
-    <div style="padding-left: 20px;">
+    <div style="padding-left: 24px; margin-top: 20px;">
         <div class="title">
             <p style="font-size: 30px;">{{ env("APP_NAME") }}</p>
         </div>
@@ -26,7 +26,7 @@
         <p>嘛.. 我们这个资源站纯公益的，不要相信任何人向您索要的 "收费" 服务呢... </p>
     </div>
 
-    <div style="padding-left: 20px;">
+    <div style="padding-left: 24px;">
         <div class="title">
             <p style="font-size: 30px;">简单介绍</p>
         </div>
@@ -37,7 +37,7 @@
         <p>(这个界面真的很难看)</p>
     </div>
 
-    <div style="padding-left: 20px; margin-top: 40px;">
+    <div style="padding-left: 24px; margin-top: 40px;">
         <div class="title">
             <p style="font-size: 30px;">其他</p>
         </div>
@@ -48,7 +48,7 @@
         <p>(我真的除了卖萌什么都不会了qwq...)</p>
     </div>
 
-    <div style="padding-left: 20px; margin-top: 40px;">
+    <div style="padding-left: 24px; margin-top: 40px;">
         <div class="title">
             <p style="font-size: 30px;">最后</p>
         </div>
@@ -64,7 +64,7 @@
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=41647266&auto=0&height=66"></iframe>
     </div>
 
-    <div style="padding-left: 20px; margin-top: 40px;">
+    <div style="padding-left: 24px; margin-top: 40px;">
         <div class="title">
             <p style="font-size: 30px;">后记</p>
         </div>
@@ -82,7 +82,7 @@
 
 
 
-    <div style="padding-left: 20px; margin-top: 40px; margin-bottom: 20px;">
+    <div style="padding-left: 24px; margin-top: 40px; margin-bottom: 20px;">
         <div class="title">
             <p style="font-size: 30px;">调查数据 - 东方资源站意见征求</p>
         </div>
@@ -191,6 +191,6 @@
 
     </div>
 
-    <img width="88%" style="padding-left: 20px; margin-bottom: 30px;" src="{{ asset("/images/no-design.png") }}">
+    <img width="88%" style="padding-left: 24px; margin-bottom: 30px;" src="{{ asset("/images/no-design.png") }}">
 
 @endsection

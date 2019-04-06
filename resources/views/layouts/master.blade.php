@@ -50,7 +50,7 @@
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue-a700">&#xe88a;</i>
                     <div class="mdui-list-item-content">主页</div>
                 </li>
-                <li class="mdui-list-item mdui-ripple">
+                <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/view/resources/games'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow-a400">&#xe021;</i>
                     <div class="mdui-list-item-content">正作游戏</div>
                 </li>
@@ -69,13 +69,13 @@
             </ul>
         </div>
 
-        <div class="frame" style="padding-top: 4px; padding-left: 4px;">
+        <div class="frame">
             @yield("content")
 
             <div class="page-footer" style="border-top: rgba(183,181,177,0.94) 1px solid;">
                 <div class="page-footer-contant mdui-valign">
                     <div class="mdui-valign">
-                        <p class="copyright">Copyright © 2019 - {{ date("Y",time()) }} <a href="https://github.com/SaigyoujiYuyuko233">SaigyoujiYuyuko</a> . All rights reserved.</p>
+                        <p class="copyright" style="padding-left: 4px;">Copyright © 2019 - {{ date("Y",time()) }} <a href="https://github.com/SaigyoujiYuyuko233">SaigyoujiYuyuko[3558168775]</a> . All rights reserved.</p>
                     </div>
                 </div>
             </div>

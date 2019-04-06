@@ -17,7 +17,7 @@ class GamesTable extends Migration
             $table->increments("id")->nullable(false)->comment("游戏id");
             $table->integer("download_times")->nullable(true)->comment("下载次数");
             $table->string("name")->nullable(true)->comment("游戏名称");
-            $table->string("file_name")->nullable(true)->comment("文件名");
+            $table->string("file_path")->nullable(true)->comment("文件路径");
             $table->boolean("file_size")->nullable(true)->comment("游戏大小");
         });
 

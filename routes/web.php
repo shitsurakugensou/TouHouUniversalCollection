@@ -21,4 +21,6 @@ Route::prefix("/view/resources")->group(function (){
     Route::get('/games', "Resources\GamesController@show");
 });
 
-
+Route::prefix("/download/resources")->middleware(['middleware'=>'throttle:1,10'])->group(function (){
+    Route::get('/games/{id}', "Resources\GamesController@download");
+});

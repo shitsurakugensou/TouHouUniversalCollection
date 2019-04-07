@@ -31,6 +31,8 @@
                 background: #1396FF;
             }
         </style>
+
+        @yield("header")
     </head>
 
     <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-pink mdui-theme-accent-red">
@@ -69,19 +71,23 @@
             </ul>
         </div>
 
-        <div class="frame">
-            @yield("content")
-
-            <div class="page-footer" style="border-top: rgba(183,181,177,0.94) 1px solid;">
-                <div class="page-footer-contant mdui-valign">
-                    <div class="mdui-valign">
-                        <p class="copyright" style="padding-left: 4px;">Copyright © 2019 - {{ date("Y",time()) }} <a href="https://github.com/SaigyoujiYuyuko233">SaigyoujiYuyuko[3558168775]</a> . All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/mdui/0.4.2/js/mdui.min.js"></script>
+
+        <div class="frame" style="height: 100%">
+            @yield("content")
+
+            <footer>
+                <div class="page-footer" style="border-top: rgba(183,181,177,0.94) 1px solid; margin-top: 20px;">
+                    <div class="page-footer-contant mdui-valign">
+                        <div class="mdui-valign">
+                            <p class="copyright" style="padding-left: 4px;">Copyright © 2019 - {{ date("Y",time()) }} <a href="https://github.com/SaigyoujiYuyuko233">SaigyoujiYuyuko[3558168775]</a> . All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
     </body>
 </html>

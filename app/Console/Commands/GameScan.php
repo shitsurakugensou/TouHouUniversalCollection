@@ -108,7 +108,8 @@ class GameScan extends Command
             DB::table("games")->insert([
                 "name" => $game_name,
                 "file_size" => round($filesize/1024/1024,2),
-                "file_path" => $game_path."/".$filename
+                "file_path" => $game_path."/".$filename,
+                "game_logo" => "/images/touhou.png" // base on '/public'
             ]);
 
             echo "$filename | ".round($filesize/1024/1024,2)."MB - Loaded\n";

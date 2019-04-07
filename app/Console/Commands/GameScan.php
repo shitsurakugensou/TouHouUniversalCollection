@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;
 
 class GameScan extends Command
@@ -52,7 +53,7 @@ class GameScan extends Command
         if (is_dir($game_path) == false){
             echo $game_path."\n";
             echo "That is not a dir. Check it again!\n";
-            return;
+            return false;
         }
 
 
@@ -74,20 +75,45 @@ class GameScan extends Command
         fclose($stdin);
 
 
-        echo "Scanning the dir...\n";
+        echo "Scanning the dir...\n\n";
 
         $dir = scandir($game_path);
 
         for ($i = 2; $i < count($dir); $i++){
-            // get file info
+            /*
+             * get file info
+             */
+
+            // filename
+            $game_name = $dir[$i];
             $filename = $dir[$i];
+
             for ($j = 0; $j < count($filtering_rule); $j++){
-                $filename = str_replace($filtering_rule[$j],"",$filename);
+                $game_name = str_replace($filtering_rule[$j],"",$game_name);
             }
 
-            echo $filename."\n";
+            // Size
+            $filesize = filesize($game_path."/".$filename);
+
+
+            // mysql
+            $check = DB::table("games")->where("name", $game_name)->get();
+
+            // if there is a game that has already had, we jump it
+            if ($check->count() >= 1){
+                echo "$filename | ".round($filesize/1024/1024,2)."MB - Skipped[already-loaded]\n";
+                continue;
+            }
+
+            DB::table("games")->insert([
+                "name" => $game_name,
+                "file_size" => round($filesize/1024/1024,2),
+                "file_path" => $game_path."/".$filename
+            ]);
+
+            echo "$filename | ".round($filesize/1024/1024,2)."MB - Loaded\n";
         }
 
-
+        return true;
     }
 }

@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 class GamesController extends Controller{
 
     public function show(){
-        return "qwq";
+
     }
 
 }

@@ -28,9 +28,9 @@
         <div class="mdui-row">
 
             @for($i = 0; $i < $list->count(); $i++)
-                <div class="mdui-col-md-4 mdui-col-sm-12" style="margin-bottom: 30px; padding-left: 15px; padding-right: 15px; height: 200px; width: 400px;">
+                <div class="mdui-col-md-4 mdui-col-sm-12" style="margin-bottom: 30px; padding-left: 15px; padding-right: 15px;">
                     <div class="mdui-grid-tile mdui-hoverable" style="border-radius: 4px;" onclick="window.location.href='/download/resources/games/{{ $list->get($i)->id }}'">
-                        <a href="javascript:;"><img src="{{ asset($list->get($i)->game_logo) }}" style="width: 100%; height: 100%;"/></a>
+                        <a href="javascript:;"><img src="{{ asset($list->get($i)->game_logo) }}"/></a>
                         <div class="mdui-grid-tile-actions">
                             <div class="mdui-grid-tile-text">
                                 <div class="mdui-grid-tile-title">{{ $list->get($i)->name }}</div>

@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \App\Console\Commands\GameScan::class,
+        \App\Console\Commands\Scan\GameScan::class,
+        \App\Console\Commands\Import\ImportExternalConnection::class,
     ];
 
     /**

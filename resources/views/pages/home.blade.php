@@ -58,10 +58,6 @@
         <p>我们暂时不提供Steam已上架的游戏的下载呐=w=。(尽快入正吧 虽然我也没有[因为我是真的穷]</p>
         <p>我的邮箱: HGK-SaigyoujiYuyuko@outlook.com | SaigyoujiYuyuko@hakugyokukon.cn</p>
         <p>各位玩的愉快呐~</p>
-
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=34367899&auto=0&height=66"></iframe>
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28732466&auto=0&height=66"></iframe>
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=41647266&auto=0&height=66"></iframe>
     </div>
 
     <div style="padding-left: 24px; margin-top: 40px;">

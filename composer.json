@@ -1,10 +1,13 @@
 {
-    "name": "laravel/laravel",
+    "name": "SaigyoujiYuyuko233/TouHouUniversalCollection",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A resources web site for TouHou.",
     "keywords": [
+        "TouHou",
+        "resources",
         "framework",
-        "laravel"
+        "laravel",
+        "PHP"
     ],
     "license": "MIT",
     "require": {

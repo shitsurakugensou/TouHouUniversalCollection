@@ -18,6 +18,10 @@
         <link href="https://cdn.bootcss.com/mdui/0.4.2/css/mdui.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300|Raleway:300" rel="stylesheet">
 
+        <link href="{{ asset("/favicon.ico") }}" rel="icon">
+
+        <meta name="viewport" content="width=device-width"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
         <style>
             body{
                 font-family: 'Noto Sans SC', sans-serif;
@@ -46,7 +50,7 @@
         </header>
 
 
-        <div class="mdui-drawer mdui-drawer-open mdui-color-pink-a200" style="color: white; top: 64px;" id="index">
+        <div class="mdui-drawer mdui-drawer-open mdui-color-pink-a200" style="color: white;" id="index">
             <ul class="mdui-list">
                 <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue-a700">&#xe88a;</i>

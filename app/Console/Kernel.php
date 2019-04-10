@@ -14,6 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\Scan\GameScan::class,
+        \App\Console\Commands\Scan\ToolsScan::class,
+
         \App\Console\Commands\Import\ImportExternalConnection::class,
     ];
 

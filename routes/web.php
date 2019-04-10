@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::prefix("/view/resources")->group(function (){
     Route::get('/games', "Resources\GamesController@show");
+    Route::get('/tools', "Resources\ToolsController@show");
 });
 
 Route::prefix("/download/resources")->group(function (){

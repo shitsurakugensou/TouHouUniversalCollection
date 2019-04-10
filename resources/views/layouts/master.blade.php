@@ -60,7 +60,7 @@
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow-a400">&#xe021;</i>
                     <div class="mdui-list-item-content">正作游戏</div>
                 </li>
-                <li class="mdui-list-item mdui-ripple">
+                <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/view/resources/tools'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-teal-a200">&#xe869;</i>
                     <div class="mdui-list-item-content">辅助工具</div>
                 </li>

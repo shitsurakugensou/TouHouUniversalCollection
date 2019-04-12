@@ -39,18 +39,21 @@
         @yield("header")
     </head>
 
-    <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-pink mdui-theme-accent-red">
-
+    <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-pink mdui-theme-layout-dark">
         <header class="mdui-appbar mdui-appbar-fixed">
-            <div class="mdui-toolbar mdui-color-pink-600" style="position: fixed; left: 0;">
+            <div class="mdui-toolbar" style="position: fixed; left: 0; background-color: #212121!important;">
                 <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#index', swipe: true}"><i class="mdui-icon material-icons">menu</i></button>
                 <span class="mdui-typo-title">{{ env("APP_NAME") }}</span>
-                <div class="mdui-toolbar-spacer"></div>
+
+                <div class="mdui-toolbar-spacer" style="padding-right: 16px;">
+                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-tooltip="{content: '设置主题'}" mdui-dialog="{target: '#layouts'}"><i class="mdui-icon material-icons">&#xe3b7;</i></button>
+                </div>
+
             </div>
         </header>
 
 
-        <div class="mdui-drawer mdui-drawer-open mdui-color-pink-a200" style="color: white;" id="index">
+        <div class="mdui-drawer mdui-drawer-open" style="color: white;" id="index">
             <ul class="mdui-list">
                 <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue-a700">&#xe88a;</i>
@@ -75,8 +78,148 @@
             </ul>
         </div>
 
+        <div class="mdui-dialog" id="layouts">
+            <div class="mdui-dialog-title" style="padding-bottom: 6px; font-size: 22px;">切换主题</div>
+            <div class="mdui-dialog-content">
+                <p style="margin: 0; padding-bottom: 10px;">本操作将会更改当前的主题~</p>
+
+                <p class="mdui-text-color-theme" style="margin: 0; padding-top: 12px; padding-bottom: 8px; color: #ababab; font-size: 20px;">主题设置</p>
+                <div class="mdui-row main-layouts">
+                    <div class="mdui-col-xs-6">
+                        <label class="mdui-radio">
+                            <input type="radio" value="light" name="theme-type"/>
+                            <i class="mdui-radio-icon"></i>
+                            明亮
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6">
+                        <label class="mdui-radio">
+                            <input type="radio" value="dark" name="theme-type" checked/>
+                            <i class="mdui-radio-icon"></i>
+                            暗黑
+                        </label>
+                    </div>
+                </div>
+
+                <p class="mdui-text-color-theme" style="margin: 0; padding-top: 12px; padding-bottom: 8px; color: #ababab; font-size: 20px;">主色</p>
+                <div class="mdui-row main-layouts">
+                    <div class="mdui-col-xs-6 mdui-text-color-pink">
+                        <label class="mdui-radio">
+                            <input type="radio" value="pink" name="main-color" checked/>
+                            <i class="mdui-radio-icon"></i>
+                            Pink
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-blue">
+                        <label class="mdui-radio">
+                            <input type="radio" value="blue" name="main-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Blue
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-brown">
+                        <label class="mdui-radio">
+                            <input type="radio" value="brown" name="main-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Brown
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-deep-purple">
+                        <label class="mdui-radio">
+                            <input type="radio" value="deep-purple" name="main-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Deep Purple
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-purple">
+                        <label class="mdui-radio">
+                            <input type="radio" value="purple" name="main-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Purple
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-red">
+                        <label class="mdui-radio">
+                            <input type="radio" value="red" name="main-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Red
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-teal">
+                        <label class="mdui-radio">
+                            <input type="radio" value="teal" name="main-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Teal
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mdui-dialog-actions">
+                <button class="mdui-btn mdui-ripple mdui-float-left">恢复默认</button>
+                <button class="mdui-btn mdui-ripple" onclick='setTheme()'>确定</button>
+            </div>
+        </div>
+
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/mdui/0.4.2/js/mdui.min.js"></script>
+
+        <script>
+            function parsingCookie(cookies){
+                var cookie_arr = cookies.split(";");
+                var parser = new Array();
+
+                for (var i = 0; i <cookie_arr.length; i++ ){
+                    var key = cookie_arr[i].split("=")[0];
+                    var value = cookie_arr[i].split("=")[1];
+
+                    parser[key] = value;
+                }
+
+                return parser;
+            }
+
+            // 设置 cookie
+            var setCookie = function (key, value) {
+                // cookie 有效期为 1 年
+                var date = new Date();
+                date.setTime(date.getTime() + 365*24*3600*1000);
+                document.cookie = key + '=' + value + '; expires=' + date.toGMTString() + '; path=/';
+            };
+
+            $(document).ready(function () {
+                var cookies = parsingCookie(document.cookie);
+
+                if (cookies['web-theme'] !== undefined) {
+                    $("body").removeClass("mdui-theme-layout-dark");
+                    $("body").addClass("mdui-theme-layout-" + cookies['web-theme']);
+
+                    console.log(cookies);
+                }
+
+                if (cookies['web-primary-color'] !== undefined) {
+                    $("body").removeClass(" mdui-theme-primary-pink");
+                    $("body").addClass(" mdui-theme-primary-" + cookies['web-primary-color']);
+                }
+            });
+
+            function setTheme(){
+                var main_color = $("input[name=\"main-color\"]:checked").val();
+                var theme_style = $("input[name=\"theme-type\"]:checked").val();
+
+                setCookie("web-theme",theme_style);
+                setCookie("web-primary-color",main_color);
+
+                document.location.reload();
+            }
+        </script>
 
         <div class="frame" style="height: 100%">
             @yield("content")

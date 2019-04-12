@@ -29,10 +29,10 @@
 
             @for($i = 0; $i < $list->count(); $i++)
                 <div class="mdui-col-lg-3 mdui-col-md-6 mdui-col-sm-12" style="margin-bottom: 30px; padding-left: 15px; padding-right: 15px;">
-                    <div class="mdui-grid-tile mdui-hoverable" style="border: #e0e0e0 1px solid; border-radius: 6px;" onclick="window.location.href='/download/resources/games/{{ $list->get($i)->id }}'">
+                    <div class="mdui-grid-tile mdui-hoverable" style="background-color: #424242; border-radius: 6px;" onclick="window.location.href='/download/resources/games/{{ $list->get($i)->id }}'">
                         <a href="javascript:;"><img src="{{ asset($list->get($i)->game_logo) }}"/></a>
 
-                        <div class="mdui-card-primary" style="background-color: #ebebeb; padding-top: 8px;">
+                        <div class="mdui-card-primary" style="padding-top: 8px;">
                             <div class="mdui-card-primary-title" style="font-size: 22px;">{{ $list->get($i)->name }}</div>
                             <div class="mdui-card-primary-subtitle">{{ $list->get($i)->description }}</div>
                         </div>

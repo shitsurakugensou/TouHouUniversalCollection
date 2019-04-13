@@ -27,6 +27,10 @@
                 font-family: 'Noto Sans SC', sans-serif;
             }
 
+            a{
+                text-decoration: none;
+            }
+
             ::-webkit-scrollbar{
                 width: 4px;
             }
@@ -39,21 +43,21 @@
         @yield("header")
     </head>
 
-    <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-pink mdui-theme-layout-dark">
+    <body class="mdui-drawer-body-left mdui-appbar-with-toolbar">
         <header class="mdui-appbar mdui-appbar-fixed">
-            <div class="mdui-toolbar" style="position: fixed; left: 0; background-color: #212121!important;">
+            <div class="mdui-toolbar mdui-color-theme-600" style="position: fixed; left: 0;">
                 <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#index', swipe: true}"><i class="mdui-icon material-icons">menu</i></button>
                 <span class="mdui-typo-title">{{ env("APP_NAME") }}</span>
 
                 <div class="mdui-toolbar-spacer" style="padding-right: 16px;">
-                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-tooltip="{content: '设置主题'}" mdui-dialog="{target: '#layouts'}"><i class="mdui-icon material-icons">&#xe3b7;</i></button>
+                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-tooltip="{content: '设置主题'}" onclick="applyTheme(document.cookie)" mdui-dialog="{target: '#layouts'}"><i class="mdui-icon material-icons">&#xe3b7;</i></button>
                 </div>
 
             </div>
         </header>
 
 
-        <div class="mdui-drawer mdui-drawer-open" style="color: white;" id="index">
+        <div class="mdui-drawer mdui-drawer-open" id="index">
             <ul class="mdui-list">
                 <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-light-blue-a700">&#xe88a;</i>
@@ -87,7 +91,7 @@
                 <div class="mdui-row main-layouts">
                     <div class="mdui-col-xs-6">
                         <label class="mdui-radio">
-                            <input type="radio" value="light" name="theme-type"/>
+                            <input type="radio" value="light" name="theme-layout"/>
                             <i class="mdui-radio-icon"></i>
                             明亮
                         </label>
@@ -95,7 +99,7 @@
 
                     <div class="mdui-col-xs-6">
                         <label class="mdui-radio">
-                            <input type="radio" value="dark" name="theme-type" checked/>
+                            <input type="radio" value="dark" name="theme-layout"/>
                             <i class="mdui-radio-icon"></i>
                             暗黑
                         </label>
@@ -106,7 +110,7 @@
                 <div class="mdui-row main-layouts">
                     <div class="mdui-col-xs-6 mdui-text-color-pink">
                         <label class="mdui-radio">
-                            <input type="radio" value="pink" name="main-color" checked/>
+                            <input type="radio" value="pink" name="theme-color"/>
                             <i class="mdui-radio-icon"></i>
                             Pink
                         </label>
@@ -114,7 +118,7 @@
 
                     <div class="mdui-col-xs-6 mdui-text-color-blue">
                         <label class="mdui-radio">
-                            <input type="radio" value="blue" name="main-color"/>
+                            <input type="radio" value="blue" name="theme-color"/>
                             <i class="mdui-radio-icon"></i>
                             Blue
                         </label>
@@ -122,7 +126,7 @@
 
                     <div class="mdui-col-xs-6 mdui-text-color-brown">
                         <label class="mdui-radio">
-                            <input type="radio" value="brown" name="main-color"/>
+                            <input type="radio" value="brown" name="theme-color"/>
                             <i class="mdui-radio-icon"></i>
                             Brown
                         </label>
@@ -130,7 +134,7 @@
 
                     <div class="mdui-col-xs-6 mdui-text-color-deep-purple">
                         <label class="mdui-radio">
-                            <input type="radio" value="deep-purple" name="main-color"/>
+                            <input type="radio" value="deep-purple" name="theme-color"/>
                             <i class="mdui-radio-icon"></i>
                             Deep Purple
                         </label>
@@ -138,7 +142,7 @@
 
                     <div class="mdui-col-xs-6 mdui-text-color-purple">
                         <label class="mdui-radio">
-                            <input type="radio" value="purple" name="main-color"/>
+                            <input type="radio" value="purple" name="theme-color"/>
                             <i class="mdui-radio-icon"></i>
                             Purple
                         </label>
@@ -146,7 +150,7 @@
 
                     <div class="mdui-col-xs-6 mdui-text-color-red">
                         <label class="mdui-radio">
-                            <input type="radio" value="red" name="main-color"/>
+                            <input type="radio" value="red" name="theme-color"/>
                             <i class="mdui-radio-icon"></i>
                             Red
                         </label>
@@ -154,7 +158,66 @@
 
                     <div class="mdui-col-xs-6 mdui-text-color-teal">
                         <label class="mdui-radio">
-                            <input type="radio" value="teal" name="main-color"/>
+                            <input type="radio" value="teal" name="theme-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Teal
+                        </label>
+                    </div>
+                </div>
+
+                <p class="mdui-text-color-theme" style="margin: 0; padding-top: 12px; padding-bottom: 8px; color: #ababab; font-size: 20px;">强调色</p>
+                <div class="mdui-row main-layouts">
+                    <div class="mdui-col-xs-6 mdui-text-color-pink">
+                        <label class="mdui-radio">
+                            <input type="radio" value="pink" name="accent-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Pink
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-blue">
+                        <label class="mdui-radio">
+                            <input type="radio" value="blue" name="accent-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Blue
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-brown">
+                        <label class="mdui-radio">
+                            <input type="radio" value="brown" name="accent-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Brown
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-deep-purple">
+                        <label class="mdui-radio">
+                            <input type="radio" value="deep-purple" name="accent-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Deep Purple
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-purple">
+                        <label class="mdui-radio">
+                            <input type="radio" value="purple" name="accent-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Purple
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-red">
+                        <label class="mdui-radio">
+                            <input type="radio" value="red" name="accent-color"/>
+                            <i class="mdui-radio-icon"></i>
+                            Red
+                        </label>
+                    </div>
+
+                    <div class="mdui-col-xs-6 mdui-text-color-teal">
+                        <label class="mdui-radio">
+                            <input type="radio" value="teal" name="accent-color"/>
                             <i class="mdui-radio-icon"></i>
                             Teal
                         </label>
@@ -162,8 +225,9 @@
                 </div>
 
             </div>
+
             <div class="mdui-dialog-actions">
-                <button class="mdui-btn mdui-ripple mdui-float-left">恢复默认</button>
+                <button class="mdui-btn mdui-ripple mdui-float-left" onclick="setDef()">恢复默认</button>
                 <button class="mdui-btn mdui-ripple" onclick='setTheme()'>确定</button>
             </div>
         </div>
@@ -172,6 +236,10 @@
         <script src="https://cdn.bootcss.com/mdui/0.4.2/js/mdui.min.js"></script>
 
         <script>
+            const def_theme_layout = "dark";
+            const def_theme_primary = "pink";
+            const def_theme_accent = "red";
+
             function parsingCookie(cookies){
                 var cookie_arr = cookies.split(";");
                 var parser = new Array();
@@ -180,7 +248,7 @@
                     var key = cookie_arr[i].split("=")[0];
                     var value = cookie_arr[i].split("=")[1];
 
-                    parser[key] = value;
+                    parser[key.replace(" ","")] = value;
                 }
 
                 return parser;
@@ -194,30 +262,88 @@
                 document.cookie = key + '=' + value + '; expires=' + date.toGMTString() + '; path=/';
             };
 
+            var setTheme = function (){
+                $("input[name=\"theme-color\"]:checked").checked = false;
+                $("input[name=\"accent-color\"]:checked").checked = false;
+
+                var main_color = $("input[name=\"theme-color\"]:checked").val();
+                var theme_style = $("input[name=\"theme-layout\"]:checked").val();
+                var theme_accent = $("input[name=\"accent-color\"]:checked").val();
+
+                setCookie("web-theme-layout",theme_style);
+                setCookie("web-theme-color",main_color);
+                setCookie("web-theme-accent",theme_accent);
+
+                var cookies = parsingCookie(document.cookie);
+                applyTheme(cookies);
+            };
+
+            var setDef = function (){
+                setCookie("web-theme-layout",def_theme_layout);
+                setCookie("web-theme-color",def_theme_primary);
+                setCookie("web-theme-accent",def_theme_accent);
+
+                var cookies = parsingCookie(document.cookie);
+                applyTheme(cookies);
+            };
+
             $(document).ready(function () {
                 var cookies = parsingCookie(document.cookie);
+                applyTheme(cookies);
 
-                if (cookies['web-theme'] !== undefined) {
-                    $("body").removeClass("mdui-theme-layout-dark");
-                    $("body").addClass("mdui-theme-layout-" + cookies['web-theme']);
-
-                    console.log(cookies);
-                }
-
-                if (cookies['web-primary-color'] !== undefined) {
-                    $("body").removeClass(" mdui-theme-primary-pink");
-                    $("body").addClass(" mdui-theme-primary-" + cookies['web-primary-color']);
-                }
+                console.log(cookies);
             });
 
-            function setTheme(){
-                var main_color = $("input[name=\"main-color\"]:checked").val();
-                var theme_style = $("input[name=\"theme-type\"]:checked").val();
+            var applyTheme = function (cookies){
+                var classStr = $("body").attr('class');
+                var classs = classStr.split(' ');
 
-                setCookie("web-theme",theme_style);
-                setCookie("web-primary-color",main_color);
+                for (i = 0, len = classs.length; i < len; i++) {
+                    if (classs[i].indexOf('mdui-theme-layout-') === 0) {
+                        $("body").removeClass(classs[i])
+                    }
+                }
 
-                document.location.reload();
+                for (i = 0, len = classs.length; i < len; i++) {
+                    if (classs[i].indexOf('mdui-theme-primary-') === 0) {
+                        $("body").removeClass(classs[i])
+                    }
+                }
+
+                for (i = 0, len = classs.length; i < len; i++) {
+                    if (classs[i].indexOf('mdui-theme-accent-') === 0) {
+                        $("body").removeClass(classs[i])
+                    }
+                }
+
+                // 切换主题
+                if (cookies['web-theme-layout'] !== undefined) {
+                    $("body").addClass("mdui-theme-layout-" + cookies['web-theme-layout']);
+
+                    $("input[value=\""+ cookies['web-theme-layout'] +"\"]").prop("checked", true);
+                }else{
+                    $("body").addClass("mdui-theme-layout-" + def_theme_layout);
+                    $("input[value=\""+ def_theme_layout +"\"]").prop("checked", true);
+                }
+
+                if (cookies['web-theme-color'] !== undefined) {
+                    $("body").addClass("mdui-theme-primary-" + cookies['web-theme-color']);
+
+                    $("input[value=\""+ cookies['web-theme-color'] +"\"][name=\"theme-color\"]").prop("checked", true);
+                }else{
+                    $("body").addClass("mdui-theme-primary-" + def_theme_primary);
+                    $("input[value=\""+ def_theme_primary +"\"][name=\"theme-color\"]").prop("checked", true);
+                }
+
+                if (cookies['web-theme-accent'] !== undefined){
+                    $("body").addClass("mdui-theme-accent-" + cookies['web-theme-accent']);
+
+                    $("input[value=\""+ cookies['web-theme-accent'] +"\"][name=\"accent-color\"]").prop("checked", true);
+                }else{
+                    $("body").addClass("mdui-theme-accent-" + def_theme_accent);
+                    $("input[value=\""+ def_theme_accent +"\"][name=\"accent-color\"]").prop("checked", true);
+                }
+
             }
         </script>
 
@@ -227,7 +353,7 @@
             <footer>
                 <div class="page-footer" style="border-top: rgba(183,181,177,0.94) 1px solid; margin-top: 20px;">
                     <div class="page-footer-contant mdui-valign">
-                        <div class="mdui-valign">
+                        <div class="mdui-valign mdui-typo">
                             <p class="copyright" style="padding-left: 4px;">Copyright © 2019 - {{ date("Y",time()) }} <a href="https://github.com/SaigyoujiYuyuko233">SaigyoujiYuyuko[3558168775]</a> . All rights reserved.</p>
                         </div>
                     </div>

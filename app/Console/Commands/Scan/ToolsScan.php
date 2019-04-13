@@ -87,7 +87,7 @@ class ToolsScan extends Command
             // filename
             $tools_name = $dir[$i];
             $filename = $dir[$i];
-            $format = @explode(".", $filename)[1] == null ? "文件" : explode(".", $filename)[1];
+            $format = pathinfo($filename, PATHINFO_EXTENSION);
 
             for ($j = 0; $j < count($filtering_rule); $j++){
                 $tools_name = str_replace($filtering_rule[$j],"",$tools_name);

@@ -39,7 +39,7 @@
 
             <tbody>
                 @for($i = 0; $i < $list->count(); $i++)
-                    <tr class="mdui-hoverable">
+                    <tr class="mdui-hoverable" onclick="window.location.href = '/download/resources/tools/{{ $list->get($i)->id }}'">
                         <td>{{ $list->get($i)->id }}</td>
                         <td>{{ $list->get($i)->name }}</td>
                         <td>{{ $list->get($i)->description }}</td>

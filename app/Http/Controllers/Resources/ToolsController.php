@@ -16,14 +16,14 @@ class ToolsController extends Controller{
     public function download($id){
         $model = new Tools();
 
-        $game_info = $model->getGame($id);
+        $tools_info = $model->getTools($id);
         $model->addDownloadTimes($id);
 
-        if($game_info->external_connection != null && env("DOWNLOAD_EXTERNAL_CONNECTION") == true){
-            return redirect($game_info->external_connection);
+        if($tools_info->external_connection != null && env("DOWNLOAD_EXTERNAL_CONNECTION") == true){
+            return redirect($tools_info->external_connection);
         }
 
-        return \response()->download($game_info->file_path,$game_info->name);
+        return \response()->download($tools_info->file_path,$tools_info->name.".".$tools_info->format);
     }
 
 }

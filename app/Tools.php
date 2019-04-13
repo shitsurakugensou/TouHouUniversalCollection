@@ -11,7 +11,7 @@ class Tools extends Model{
         return DB::table("tools")->get();
     }
 
-    public function getGame($id){
+    public function getTools($id){
         return DB::table("tools")->where("id",$id)->get()->get(0);
     }
 

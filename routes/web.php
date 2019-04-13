@@ -24,4 +24,5 @@ Route::prefix("/view/resources")->group(function (){
 
 Route::prefix("/download/resources")->group(function (){
     Route::get('/games/{id}', "Resources\GamesController@download");
+    Route::get('/tools/{id}', "Resources\ToolsController@download");
 });

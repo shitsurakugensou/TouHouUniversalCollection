@@ -1,0 +1,59 @@
+{
+    "name": "游戏下载外链",
+    "description": "用于连接到其他下载服务器下载游戏",
+
+    "data":{
+
+        "0": {
+            "name": "[th01-05]旧五作",
+            "url": "http://th-res.h1.s2.yoyoko233.top/%5Bth01-05%5D%20%E6%97%A7%E4%BA%94%E4%BD%9C%20(%E6%A8%A1%E6%8B%9F%E5%99%A8+%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        },
+
+        "1": {
+            "name": "[th06]东方红魔乡",
+            "url": "http://th-res.h1.s2.yoyoko233.top/%5Bth06%5D%20%E4%B8%9C%E6%96%B9%E7%BA%A2%E9%AD%94%E4%B9%A1%20(%E6%B1%89%E5%8C%96%E7%89%88).rar"
+        },
+
+        "2": {
+            "name": "[th07]东方妖妖梦",
+            "url": "http://th-res.h1.s2.yoyoko233.top/%5Bth07%5D%20%E4%B8%9C%E6%96%B9%E5%A6%96%E5%A6%96%E6%A2%A6%20(%E6%B1%89%E5%8C%96%E7%89%88).rar"
+        },
+
+        "3": {
+            "name": "[th075]东方萃梦想",
+            "url": "http://th-res.h2.s2.saigyoujiyuyuko.top/%5Bth075%5D%20%E4%B8%9C%E6%96%B9%E8%90%83%E6%A2%A6%E6%83%B3%20(%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        },
+
+
+        "4": {
+            "name": "[th08]东方永夜抄",
+            "url": "http://th-res.h1.s2.yoyoko233.top/%5Bth08%5D%20%E4%B8%9C%E6%96%B9%E6%B0%B8%E5%A4%9C%E6%8A%84%20(%E6%B1%89%E5%8C%96%E7%89%88).rar"
+        },
+
+        "5": {
+            "name": "[th095]东方文花帖",
+            "url": "http://th-res.h3.s2.hakugyokukon.cn/%5Bth095%5D%20%E4%B8%9C%E6%96%B9%E6%96%87%E8%8A%B1%E5%B8%96%20(%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        },
+
+        "6": {
+            "name": "[th09]东方花映塚",
+            "url": "http://th-res.h2.s2.saigyoujiyuyuko.top/%5Bth09%5D%20%E4%B8%9C%E6%96%B9%E8%8A%B1%E6%98%A0%E5%A1%9A%20(%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        },
+
+        "7": {
+            "name": "[th10]东方风神录",
+            "url": "http://th-res.h3.s2.hakugyokukon.cn/%5Bth10%5D%20%E4%B8%9C%E6%96%B9%E9%A3%8E%E7%A5%9E%E5%BD%95%20(%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        },
+
+        "8": {
+            "name": "[th11]东方地灵殿",
+            "url": "http://th-res.h3.s2.hakugyokukon.cn/%5Bth11%5D%20%E4%B8%9C%E6%96%B9%E5%9C%B0%E7%81%B5%E6%AE%BF%20(%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        },
+
+        "9": {
+            "name": "[th125]东方文花帖DS",
+            "url": "http://th-res.h3.s2.hakugyokukon.cn/%5Bth125%5D%20%E4%B8%9C%E6%96%B9%E6%96%87%E8%8A%B1%E5%B8%96DS%20(%E6%B1%89%E5%8C%96%E7%89%88+%E6%97%A5%E6%96%87%E7%89%88).rar"
+        }
+
+    }
+}

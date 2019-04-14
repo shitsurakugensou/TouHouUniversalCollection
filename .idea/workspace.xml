@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,13 +47,13 @@
         <counts>
           <entry key="dummy" value="13" />
           <entry key="gitignore" value="9" />
-          <entry key="php" value="1830" />
+          <entry key="php" value="1836" />
           <entry key="yaml" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="1644" />
+          <entry key="Blade" value="1650" />
           <entry key="PHP" value="186" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="YAML" value="85" />
@@ -88,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="359" column="370" selection-start-line="359" selection-start-column="370" selection-end-line="359" selection-end-column="370" />
+            <state relative-caret-position="448">
+              <caret line="362" column="26" lean-forward="true" selection-start-line="362" selection-start-column="26" selection-end-line="362" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -477,12 +476,12 @@
       <workItem from="1554726291428" duration="25276000" />
       <workItem from="1555072546224" duration="23077000" />
       <workItem from="1555203584769" duration="128000" />
-      <workItem from="1555203765058" duration="3279000" />
+      <workItem from="1555203765058" duration="3539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114226000" />
+    <option name="totallyTimeSpent" value="114486000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,10 +497,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32356077" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.32356077" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="npm" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49946696" weight="0.2801303" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49946696" visible="true" weight="0.2801303" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32681867" />
@@ -828,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="359" column="370" selection-start-line="359" selection-start-column="370" selection-end-line="359" selection-end-column="370" />
+        <state relative-caret-position="448">
+          <caret line="362" column="26" lean-forward="true" selection-start-line="362" selection-start-column="26" selection-end-line="362" selection-end-column="26" />
         </state>
       </provider>
     </entry>

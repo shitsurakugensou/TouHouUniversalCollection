@@ -50,7 +50,7 @@
                 <span class="mdui-typo-title">{{ env("APP_NAME") }}</span>
 
                 <div class="mdui-toolbar-spacer" style="padding-right: 16px;">
-                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-tooltip="{content: '设置主题'}" onclick="applyTheme(document.cookie)" mdui-dialog="{target: '#layouts'}"><i class="mdui-icon material-icons">&#xe3b7;</i></button>
+                    <button class="mdui-btn mdui-btn-icon mdui-float-right" mdui-tooltip="{content: '设置主题'}" mdui-dialog="{target: '#layouts'}"><i class="mdui-icon material-icons">&#xe3b7;</i></button>
                 </div>
 
             </div>

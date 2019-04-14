@@ -40,8 +40,9 @@
         </div>
 
         <div class="mdui-typo">
-            <p>BUG反馈: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/vqEZFb/">点我点我~</a></p>
-            <p>每月问卷: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/qaUzI3b/">点我点我~</a></p>
+            <p class="mdui-text-color-theme-accent mdui-typo" style="margin: 0; padding-bottom: 4px;"><a href="/view/resources/lanCraft">联机工具区已开放</a></p>
+            <p style="margin: 0; padding-bottom: 4px;">BUG反馈: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/vqEZFb/">点我点我~</a></p>
+            <p style="margin: 0; padding-bottom: 4px;">每月问卷: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/qaUzI3b/">点我点我~</a></p>
         </div>
 
     </div>

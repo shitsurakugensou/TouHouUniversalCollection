@@ -11,3 +11,4 @@ npm-debug.log
 yarn-error.log
 /public/resources/games/*
 /public/resources/tools/*
+/public/resources/lanCraft/*

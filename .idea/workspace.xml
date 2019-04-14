@@ -47,13 +47,13 @@
         <counts>
           <entry key="dummy" value="13" />
           <entry key="gitignore" value="9" />
-          <entry key="php" value="1836" />
+          <entry key="php" value="1852" />
           <entry key="yaml" value="85" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="1650" />
+          <entry key="Blade" value="1666" />
           <entry key="PHP" value="186" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="YAML" value="85" />
@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="362" column="26" lean-forward="true" selection-start-line="362" selection-start-column="26" selection-end-line="362" selection-end-column="26" />
+            <state relative-caret-position="313">
+              <caret line="356" column="91" selection-start-line="356" selection-start-column="91" selection-end-line="356" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -476,12 +476,12 @@
       <workItem from="1554726291428" duration="25276000" />
       <workItem from="1555072546224" duration="23077000" />
       <workItem from="1555203584769" duration="128000" />
-      <workItem from="1555203765058" duration="3539000" />
+      <workItem from="1555203765058" duration="3691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114486000" />
+    <option name="totallyTimeSpent" value="114638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -827,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="362" column="26" lean-forward="true" selection-start-line="362" selection-start-column="26" selection-end-line="362" selection-end-column="26" />
+        <state relative-caret-position="313">
+          <caret line="356" column="91" selection-start-line="356" selection-start-column="91" selection-end-line="356" selection-end-column="91" />
         </state>
       </provider>
     </entry>

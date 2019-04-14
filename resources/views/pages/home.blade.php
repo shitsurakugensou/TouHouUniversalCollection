@@ -81,8 +81,8 @@
             <p style="font-size: 30px;">调查数据 - 东方资源站意见征求</p>
         </div>
 
-        <p class="mdui-text-color-theme-accent">
-            <a href="{{ asset("/resources/东方资源站意见征求.docx") }}">
+        <p class="mdui-typo">
+            <a class="mdui-text-color-theme-accent" href="{{ asset("/resources/东方资源站意见征求.docx") }}">
                 <i class="mdui-icon material-icons">&#xe226;</i> 东方资源站意见征求.docx
             </a>
         </p>

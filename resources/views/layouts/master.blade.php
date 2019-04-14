@@ -75,7 +75,7 @@
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green-a700">&#xe431;</i>
                     <div class="mdui-list-item-content">教程攻略</div>
                 </li>
-                <li class="mdui-list-item mdui-ripple">
+                <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/view/resources/lanCraft'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange-a400">&#xe8be;</i>
                     <div class="mdui-list-item-content">联机工具</div>
                 </li>

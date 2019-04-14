@@ -98,7 +98,7 @@ class ToolsScan extends Command
 
 
             // mysql
-            $check = DB::table("games")->where("name", $tools_name)->get();
+            $check = DB::table("tools")->where("name", $tools_name)->get();
 
             // if there is a game that has already had, we jump it
             if ($check->count() >= 1){
@@ -116,7 +116,7 @@ class ToolsScan extends Command
             echo "$filename | ".round($filesize/1024/1024,2)."MB - Loaded\n";
         }
 
-        echo "\nFinish the games import. Time used: ".round(microtime(true) - $start,4)."ms\n\n";
+        echo "\nFinish the tools import. Time used: ".round(microtime(true) - $start,4)."ms\n\n";
 
         return true;
     }

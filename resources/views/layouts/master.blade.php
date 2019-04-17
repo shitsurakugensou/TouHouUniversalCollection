@@ -10,12 +10,12 @@
  */
 ?>
 
-
 <html lang="zh-cn">
     <head>
         <title> {{ env("APP_NAME") }} - @yield("action")</title>
 
         <link href="https://cdn.bootcss.com/mdui/0.4.2/css/mdui.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/limonte-sweetalert2/7.33.0/sweetalert2.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300|Raleway:300" rel="stylesheet">
 
         <link href="{{ asset("/favicon.ico") }}" rel="icon">
@@ -234,6 +234,9 @@
 
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/mdui/0.4.2/js/mdui.min.js"></script>
+        <script src="https://cdn.bootcss.com/limonte-sweetalert2/7.33.0/sweetalert2.all.js"></script>
+
+        @include('sweet::alert')
 
         <script>
             const def_theme_layout = "dark";

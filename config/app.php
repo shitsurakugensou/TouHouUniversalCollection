@@ -167,6 +167,9 @@ return [
          */
         Barryvdh\Debugbar\ServiceProvider::class,
 
+        // sweet-alert
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -228,7 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
-
+        'SweetAlert' => UxWeb\SweetAlert\SweetAlert::class,
     ],
 
 ];

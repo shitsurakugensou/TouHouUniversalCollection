@@ -1,0 +1,26 @@
+language: php
+php:
+  - 7.1.9
+  - 7.2
+  - 7.0
+  - nightly
+
+branches:
+  only:
+    - develop/v1.0.0
+    - master
+
+services:
+  - mysql
+
+env:
+  - APP_DEBUG=false
+
+before_script:
+  - curl -sSfL -o ~/.phpenv/versions/hhvm/bin/phpunit https://phar.phpunit.de/phpunit-5.7.phar
+
+install:
+  - composer install --prefer-dist --optimize-autoloader --no-dev
+
+script:
+  - phpunit -c phpunit.xml --coverage-text

@@ -236,8 +236,6 @@
         <script src="https://cdn.bootcss.com/mdui/0.4.2/js/mdui.min.js"></script>
         <script src="https://cdn.bootcss.com/limonte-sweetalert2/7.33.0/sweetalert2.all.js"></script>
 
-        @include('sweet::alert')
-
         <script>
             const def_theme_layout = "dark";
             const def_theme_primary = "pink";
@@ -266,9 +264,6 @@
             };
 
             var setTheme = function (){
-                $("input[name=\"theme-color\"]:checked").checked = false;
-                $("input[name=\"accent-color\"]:checked").checked = false;
-
                 var main_color = $("input[name=\"theme-color\"]:checked").val();
                 var theme_style = $("input[name=\"theme-layout\"]:checked").val();
                 var theme_accent = $("input[name=\"accent-color\"]:checked").val();
@@ -294,6 +289,11 @@
                 var cookies = parsingCookie(document.cookie);
                 applyTheme(cookies);
 
+                // 公告
+                @if( isset($announcement) == true)
+                    {!! $announcement !!}
+                @endif
+
                 console.log(cookies);
             });
 
@@ -302,51 +302,34 @@
                 var classs = classStr.split(' ');
 
                 for (i = 0, len = classs.length; i < len; i++) {
+                    if (classs[i].indexOf('mdui-theme-accent-') === 0) {
+                        $("body").removeClass(classs[i])
+                    }
+
+                    if (classs[i].indexOf('mdui-theme-primary-') === 0) {
+                        $("body").removeClass(classs[i])
+                    }
+
                     if (classs[i].indexOf('mdui-theme-layout-') === 0) {
                         $("body").removeClass(classs[i])
                     }
                 }
 
-                for (i = 0, len = classs.length; i < len; i++) {
-                    if (classs[i].indexOf('mdui-theme-primary-') === 0) {
-                        $("body").removeClass(classs[i])
-                    }
-                }
+                var web_theme_layout = cookies['web-theme-layout'] !== undefined ? cookies['web-theme-layout'] : def_theme_layout;
+                var web_theme_color = cookies['web-theme-color'] !== undefined ? cookies['web-theme-color'] : def_theme_primary;
+                var web_theme_accent = cookies['web-theme-accent'] !== undefined ? cookies['web-theme-accent'] : def_theme_accent;
 
-                for (i = 0, len = classs.length; i < len; i++) {
-                    if (classs[i].indexOf('mdui-theme-accent-') === 0) {
-                        $("body").removeClass(classs[i])
-                    }
-                }
+                console.log(web_theme_accent + web_theme_color + web_theme_layout);
 
                 // 切换主题
-                if (cookies['web-theme-layout'] !== undefined) {
-                    $("body").addClass("mdui-theme-layout-" + cookies['web-theme-layout']);
+                $("body").addClass("mdui-theme-layout-" + web_theme_layout);
+                $("input[value=\""+ web_theme_layout +"\"]").prop("checked", true);
 
-                    $("input[value=\""+ cookies['web-theme-layout'] +"\"]").prop("checked", true);
-                }else{
-                    $("body").addClass("mdui-theme-layout-" + def_theme_layout);
-                    $("input[value=\""+ def_theme_layout +"\"]").prop("checked", true);
-                }
+                $("body").addClass("mdui-theme-primary-" + web_theme_color);
+                $("input[value=\""+ web_theme_color +"\"][name=\"theme-color\"]").prop("checked", true);
 
-                if (cookies['web-theme-color'] !== undefined) {
-                    $("body").addClass("mdui-theme-primary-" + cookies['web-theme-color']);
-
-                    $("input[value=\""+ cookies['web-theme-color'] +"\"][name=\"theme-color\"]").prop("checked", true);
-                }else{
-                    $("body").addClass("mdui-theme-primary-" + def_theme_primary);
-                    $("input[value=\""+ def_theme_primary +"\"][name=\"theme-color\"]").prop("checked", true);
-                }
-
-                if (cookies['web-theme-accent'] !== undefined){
-                    $("body").addClass("mdui-theme-accent-" + cookies['web-theme-accent']);
-
-                    $("input[value=\""+ cookies['web-theme-accent'] +"\"][name=\"accent-color\"]").prop("checked", true);
-                }else{
-                    $("body").addClass("mdui-theme-accent-" + def_theme_accent);
-                    $("input[value=\""+ def_theme_accent +"\"][name=\"accent-color\"]").prop("checked", true);
-                }
-
+                $("body").addClass("mdui-theme-accent-" + web_theme_accent);
+                $("input[value=\""+ web_theme_accent +"\"][name=\"accent-color\"]").prop("checked", true);
             }
         </script>
 

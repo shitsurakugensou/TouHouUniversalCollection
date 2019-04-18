@@ -19,17 +19,18 @@ class AnnouncementCheck
      */
     public function handle($request, Closure $next){
         $announcement = DB::table("information")->select("Announcement")->get('Announcement')[0]->Announcement;
+        $announcement = 'swal({title: "公告", html: \'' . $announcement . '\', confirmButtonText: "知道了", type: "info"});';
 
         // 判断是否带有通知cookie | false: 显示通知
         if($announcement != null && Cookie::has("announcement") == false){
-            SweetAlert::message($announcement);
+            view()->share(["announcement" => $announcement]);
             Cookie::queue("announcement", $announcement, time() + 30*24*3600, "/");
         }
 
         // 判断是否显示最新通知
         if(Cookie::has("announcement") == true){
             if(Cookie::get("announcement") != $announcement){
-                SweetAlert::message($announcement);
+                view()->share(["announcement" => $announcement]);
                 Cookie::queue("announcement", $announcement, time() + 30*24*3600, "/");
             }
         }

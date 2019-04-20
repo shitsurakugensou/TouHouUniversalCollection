@@ -32,13 +32,13 @@
         <counts>
           <entry key="php" value="164" />
           <entry key="yaml" value="69" />
-          <entry key="yml" value="65" />
+          <entry key="yml" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="164" />
-          <entry key="YAML" value="134" />
+          <entry key="YAML" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+            <state relative-caret-position="330">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -569,12 +569,12 @@
       <workItem from="1555716655756" duration="2531000" />
       <workItem from="1555721642268" duration="19000" />
       <workItem from="1555721920020" duration="567000" />
-      <workItem from="1555722649002" duration="2686000" />
+      <workItem from="1555722649002" duration="3077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150069000" />
+    <option name="totallyTimeSpent" value="150460000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+        <state relative-caret-position="330">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
     </entry>

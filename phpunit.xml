@@ -31,4 +31,7 @@
         <server name="SESSION_DRIVER" value="array"/>
         <env name="APP_KEY" value="base64:ZlzQO3do4DPtcouj7xTvyAVcBsHKAcLKcQVbec0JxnY="/>
     </php>
+    <logging>
+        <log type="coverage-clover" target="clover.xml"/>
+    </logging>
 </phpunit>

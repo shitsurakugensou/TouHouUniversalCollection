@@ -19,7 +19,7 @@ class ToolsController extends Controller{
         $tools_info = $model->getTools($id);
         $model->addDownloadTimes($id);
 
-        return \response()->download($tools_info->file_path,$tools_info->name.".".$tools_info->format);
+        return \response()->download($tools_info->file_path, basename($tools_info->path));
     }
 
 }

@@ -18,15 +18,15 @@ class AnnouncementCheck
      * @return mixed
      */
     public function handle($request, Closure $next){
-        $announcement = DB::table("announcement")->select("content")->get('content')->last();
-        $announcement = isset($announcement->content) == true ? $announcement->content : null;
+        $sql = DB::table("announcement")->get()->last();
+        $announcement = isset($sql->content) == true ? $sql->content : null;
 
         // 如果公告 == null
         if ($announcement != null){
             $announcement = str_replace("\n","",$announcement);
             $announcement = str_replace("\r","",$announcement);
 
-            $announcement = 'swal({title: "公告", html: \'' . $announcement . '\', confirmButtonText: "知道了", type: "info"});';
+            $announcement = 'swal({title: "' . $sql->summary . '", html: \'' . $announcement . '\', confirmButtonText: "知道了", type: "info"});';
         }
 
         // 判断是否带有通知cookie | false: 显示通知
@@ -38,7 +38,7 @@ class AnnouncementCheck
         // 判断是否显示最新通知
         if($announcement != null && Cookie::has("announcement") == true){
             if(Cookie::get("announcement") != $announcement){
-                view()->share(["announcement" => $announcement]);
+                view()->share(["announcement_js" => $announcement]);
                 Cookie::queue("announcement", $announcement, time() + 30*24*3600, "/");
             }
         }

@@ -22,10 +22,16 @@ class Annoncements extends Migration
             // id
             $table->increments("id")->comment("id");
 
+            // summary
+            $table->string("summary")
+                ->default("日常公告=w=")
+                ->nullable(false)
+            ->comment("概要");
+
             // 内容
             $table->text("content")
-                ->nullable(true)
                 ->default(null)
+                ->nullable(true)
                 ->comment("公告");
 
             // 最后编辑

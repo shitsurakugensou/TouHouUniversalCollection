@@ -290,8 +290,8 @@
                 applyTheme(cookies);
 
                 // 公告
-                @if( isset($announcement) == true)
-                    {!! $announcement !!}
+                @if( isset($announcement_js) == true)
+                    {!! $announcement_js !!}
                 @endif
 
                 console.log(cookies);

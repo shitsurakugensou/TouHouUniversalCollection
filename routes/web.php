@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "Entrance\RootController@show")
+Route::get('/', "Access\RootController@show")
     ->middleware(\App\Http\Middleware\Information\AnnouncementCheck::class);
 
 Route::prefix("/view/resources")

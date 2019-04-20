@@ -37,9 +37,9 @@ install:
   - travis_retry php artisan migrate
 
 script:
-  - if [ "$TEST_SUITE" = "Unit" ]; then vendor/bin/phpunit --bootstrap vendor/autoload.php tests/Unit; fi;
-  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit --bootstrap vendor/autoload.php --coverage-clover coverage.xml tests/Unit; fi;
-  - if [ "$TEST_SUITE" = "Integration" ]; then vendor/bin/phpunit tests/Integration; fi;
+  - if [ "$TEST_SUITE" = "Unit" ]; then vendor/bin/phpunit tests/Unit; fi;
+  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit --coverage-clover coverage.xml tests/Unit; npm run report-coverage; fi;
+  #- if [ "$TEST_SUITE" = "Integration" ]; then vendor/bin/phpunit tests/Integration; fi;
 
 notifications:
   webhooks:

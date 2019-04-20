@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TouHouUniversalCollection.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TouHouUniversalCollection.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +35,7 @@
           <entry key="php" value="1915" />
           <entry key="travis" value="67" />
           <entry key="yaml" value="69" />
-          <entry key="yml" value="225" />
+          <entry key="yml" value="233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -50,7 +44,7 @@
           <entry key="Blade" value="433" />
           <entry key="PHP" value="1482" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="YAML" value="294" />
+          <entry key="YAML" value="302" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+            <state relative-caret-position="615">
+              <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -542,12 +536,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="16193000" />
+      <workItem from="1555736417068" duration="16726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175186000" />
+    <option name="totallyTimeSpent" value="175719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -944,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        <state relative-caret-position="615">
+          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
         </state>
       </provider>
     </entry>

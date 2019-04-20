@@ -11,7 +11,7 @@ matrix:
 
 env:
   matrix:
-  - TEST_SUITE=Unit
+  - TEST_SUITE=Testing
   - TEST_SUITE=Coverage
   - TEST_SUITE=Integration
 
@@ -37,7 +37,7 @@ install:
   - travis_retry php artisan migrate
 
 script:
-  - if [ "$TEST_SUITE" = "Unit" ]; then vendor/bin/phpunit tests/Unit; fi;
+  - if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;
   - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit --coverage-clover coverage.xml tests/Unit; npm run report-coverage; fi;
   #- if [ "$TEST_SUITE" = "Integration" ]; then vendor/bin/phpunit tests/Integration; fi;
 

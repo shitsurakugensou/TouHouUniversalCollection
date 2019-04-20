@@ -23,6 +23,9 @@ class AnnouncementCheck
 
         // 如果公告 == null
         if ($announcement != null){
+            $announcement = str_replace("\n","",$announcement);
+            $announcement = str_replace("\r","",$announcement);
+
             $announcement = 'swal({title: "公告", html: \'' . $announcement . '\', confirmButtonText: "知道了", type: "info"});';
         }
 

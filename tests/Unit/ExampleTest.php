@@ -14,6 +14,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
+        echo "Laravel - 示例单元测试";
         $this->assertTrue(true);
     }
 }

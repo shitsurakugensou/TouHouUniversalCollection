@@ -13,7 +13,10 @@ class Infomation extends Migration
      */
     public function up(){
         Schema::create("information",function (Blueprint $table){
-            $table->string("Announcement")->nullable(true)->default(null)->comment("公告");
+            $table->text("Announcement")
+                ->nullable(true)
+                ->default(null)
+                ->comment("公告");
         });
     }
 

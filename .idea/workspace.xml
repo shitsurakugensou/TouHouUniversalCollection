@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +32,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="php" value="1538" />
+          <entry key="php" value="1685" />
           <entry key="travis" value="67" />
           <entry key="yaml" value="69" />
           <entry key="yml" value="201" />
@@ -42,7 +42,7 @@
         <counts>
           <entry key=".env file" value="67" />
           <entry key="Blade" value="433" />
-          <entry key="PHP" value="1105" />
+          <entry key="PHP" value="1252" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="270" />
         </counts>
@@ -52,7 +52,8 @@
           <entry key="PHP/D:/PHP application/TouHouUniversalCollection" value="1" />
           <entry key="env" value="1" />
           <entry key="example" value="1" />
-          <entry key="php" value="27" />
+          <entry key="json" value="1" />
+          <entry key="php" value="28" />
           <entry key="travis" value="2" />
           <entry key="yaml" value="1" />
           <entry key="yml" value="1" />
@@ -62,7 +63,8 @@
         <counts>
           <entry key=".env file" value="4" />
           <entry key="Blade" value="2" />
-          <entry key="PHP" value="25" />
+          <entry key="JSON" value="1" />
+          <entry key="PHP" value="26" />
           <entry key="UML" value="1" />
           <entry key="YAML" value="2" />
         </counts>
@@ -71,59 +73,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-              <folding>
-                <element signature="e#1042#1087#0#HTML" expanded="true" />
-                <element signature="e#1262#1281#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Access/RootTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
-                <element signature="e#7#41#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="293" column="44" lean-forward="true" selection-start-line="293" selection-start-column="44" selection-end-line="293" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Access/RootController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding>
-                <element signature="e#47#72#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Access/RootModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#30#64#0#PHP" expanded="true" />
+                <element signature="e#40#86#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,7 +135,6 @@
         <option value="$PROJECT_DIR$/.env.travis" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/GamesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/LanCraftController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" />
@@ -191,6 +146,7 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" />
       </list>
     </option>
   </component>
@@ -540,12 +496,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="11044000" />
+      <workItem from="1555736417068" duration="12766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170037000" />
+    <option name="totallyTimeSpent" value="171759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,7 +520,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20202559" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="npm" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49733475" visible="true" weight="0.27687296" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49733475" weight="0.27687296" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5026652" side_tool="true" weight="0.27687296" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3257329" />
@@ -622,13 +578,6 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_09_105839_fix_games_table_int_err.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc" />
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -823,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/RootTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/LanCraft.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -936,10 +878,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="436">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#7#41#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/RootTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <element signature="e#40#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

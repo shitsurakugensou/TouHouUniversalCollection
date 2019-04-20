@@ -19,3 +19,7 @@ install:
 
 script:
   - phpunit -c phpunit.xml
+
+notifications:
+  webhooks:
+    - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/209387eb347a474a815bc9224be9b265/790fd74b-5ce0-4ee8-b240-65585e725f00

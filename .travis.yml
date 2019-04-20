@@ -20,7 +20,7 @@ install:
   - composer install --prefer-dist --optimize-autoloader --no-dev
 
 script:
-  - vendor/bin/phpunit -c ../../phpunit.xml
+  - ls vendor
 
 notifications:
   webhooks:

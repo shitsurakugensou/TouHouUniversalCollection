@@ -21,8 +21,6 @@ class RootTest extends TestCase{
         echo $color->apply("light_blue","[Access/RootTest] ");
         echo $color->apply("light_green","Successfully to access '/' - 200 √\n");
 
-        //$color("qwq")
-
     }
 
 }

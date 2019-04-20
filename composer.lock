@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab2acbdd6cef3be1e8ce87892c113bda",
+    "content-hash": "43ded8bf9a757d9daab744fe5bcb662e",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -3679,6 +3679,51 @@
             "time": "2018-10-04T07:22:24+00:00"
         },
         {
+            "name": "codecov/codecov-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecov/example-php.git",
+                "reference": "959e40e4e293a261ba9d1db559787cc3cc2156c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecov/example-php/zipball/959e40e4e293a261ba9d1db559787cc3cc2156c1",
+                "reference": "959e40e4e293a261ba9d1db559787cc3cc2156c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Example": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codecov.io",
+                    "email": "hello@codecov.io"
+                }
+            ],
+            "description": "demo repo",
+            "homepage": "https://github.com/codecov/codecov-php",
+            "keywords": [
+                "code coverage",
+                "codecov",
+                "coverage reports"
+            ],
+            "time": "2018-11-10T05:38:09+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.2.0",
             "source": {
@@ -5383,7 +5428,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "codecov/codecov-php": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

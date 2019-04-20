@@ -35,10 +35,12 @@ install:
   - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
   - travis_retry cp .env.travis .env
   - travis_retry php artisan migrate
+  - travis_retry sudo apt install linuxbrew-wrapper
+  - travis_retry brew install php70-xdebug
 
 script:
   - if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;
-  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit --coverage-clover coverage.xml tests/Unit; npm run report-coverage; fi;
+  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit --coverage-clover  coverage.xml tests/Unit; fi;
   #- if [ "$TEST_SUITE" = "Integration" ]; then vendor/bin/phpunit tests/Integration; fi;
 
 notifications:

@@ -19,10 +19,12 @@ env:
 install:
   - composer install --prefer-dist --optimize-autoloader
 
-script:
+before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
   - cp .env.travis .env
   - php artisan migrate
+
+script:
   - vendor/bin/phpunit --version
   - vendor/bin/phpunit -c phpunit.xml
 

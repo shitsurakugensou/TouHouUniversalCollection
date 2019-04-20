@@ -18,8 +18,8 @@ class AnnouncementCheck
      * @return mixed
      */
     public function handle($request, Closure $next){
-        $announcement = DB::table("information")->select("Announcement")->get('Announcement')[0];
-        $announcement = $announcement->Announcement != null ? $announcement->Announcement : null;
+        $announcement = DB::table("information")->select("Announcement")->get('Announcement');
+        $announcement = isset($announcement[0]) == true ? $announcement[0]->Announcement : null;
 
         // 如果公告 == null
         if ($announcement != null){
@@ -36,7 +36,7 @@ class AnnouncementCheck
         }
 
         // 判断是否显示最新通知
-        if(Cookie::has("announcement") == true){
+        if($announcement != null && Cookie::has("announcement") == true){
             if(Cookie::get("announcement") != $announcement){
                 view()->share(["announcement" => $announcement]);
                 Cookie::queue("announcement", $announcement, time() + 30*24*3600, "/");

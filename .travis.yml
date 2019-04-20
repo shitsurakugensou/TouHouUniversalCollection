@@ -1,7 +1,23 @@
 language: php
+
 php:
   - 7.1
   - 7.2
+
+matrix:
+  fast_finish: true
+  allow_failures:
+  - env: TEST_SUITE=Coverage
+
+env:
+  matrix:
+  - TEST_SUITE=Unit
+  - TEST_SUITE=Coverage
+  - TEST_SUITE=Integration
+
+cache:
+  directories:
+  - $HOME/.composer/cache
 
 branches:
   only:
@@ -13,20 +29,22 @@ sudo: true
 services:
   - mysql
 
-env:
-  - APP_DEBUG=false
-
 install:
-  - composer install --prefer-dist --optimize-autoloader
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
-  - cp .env.travis .env
-  - php artisan migrate
+  - travis_retry composer self-update
+  - travis_retry composer install --prefer-dist --optimize-autoloader
+  - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
+  - travis_retry cp .env.travis .env
+  - travis_retry php artisan migrate
 
 script:
-  - vendor/bin/phpunit --version
-  - vendor/bin/phpunit -c phpunit.xml
+  - if [ "$TEST_SUITE" = "Unit" ]; then vendor/bin/phpunit --bootstrap vendor/autoload.php tests/Unit; fi;
+  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit --bootstrap vendor/autoload.php --coverage-clover coverage.xml tests/Unit; fi;
+  - if [ "$TEST_SUITE" = "Integration" ]; then vendor/bin/phpunit tests/Integration; fi;
 
 notifications:
   webhooks:
     - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/209387eb347a474a815bc9224be9b265/790fd74b-5ce0-4ee8-b240-65585e725f00
     - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/ec3a1abfe11e46ee9b387726896b1b60/790fd74b-5ce0-4ee8-b240-65585e725f00
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)

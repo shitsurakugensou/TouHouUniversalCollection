@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="1532" />
+          <entry key="dummy" value="8" />
+          <entry key="php" value="1538" />
           <entry key="travis" value="67" />
           <entry key="yaml" value="69" />
           <entry key="yml" value="201" />
@@ -41,7 +42,8 @@
         <counts>
           <entry key=".env file" value="67" />
           <entry key="Blade" value="433" />
-          <entry key="PHP" value="1099" />
+          <entry key="PHP" value="1105" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="YAML" value="270" />
         </counts>
       </usages-collector>
@@ -50,7 +52,7 @@
           <entry key="PHP/D:/PHP application/TouHouUniversalCollection" value="1" />
           <entry key="env" value="1" />
           <entry key="example" value="1" />
-          <entry key="php" value="26" />
+          <entry key="php" value="27" />
           <entry key="travis" value="2" />
           <entry key="yaml" value="1" />
           <entry key="yml" value="1" />
@@ -60,7 +62,7 @@
         <counts>
           <entry key=".env file" value="4" />
           <entry key="Blade" value="2" />
-          <entry key="PHP" value="24" />
+          <entry key="PHP" value="25" />
           <entry key="UML" value="1" />
           <entry key="YAML" value="2" />
         </counts>
@@ -69,7 +71,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -77,6 +79,18 @@
               <folding>
                 <element signature="e#1042#1087#0#HTML" expanded="true" />
                 <element signature="e#1262#1281#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding>
+                <element signature="e#7#41#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar/config/debugbar.php" />
         <option value="$PROJECT_DIR$/resources/views/home/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/GameScan.php" />
         <option value="$PROJECT_DIR$/public/resources/ex_games.json" />
@@ -177,6 +190,7 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/Information/AnnouncementCheck.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php" />
       </list>
     </option>
   </component>
@@ -526,12 +540,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="10548000" />
+      <workItem from="1555736417068" duration="11044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169541000" />
+    <option name="totallyTimeSpent" value="170037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,10 +561,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20202559" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20202559" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="npm" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49733475" visible="true" weight="0.27687296" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49733475" visible="true" weight="0.27687296" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5026652" side_tool="true" weight="0.27687296" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3257329" />
@@ -892,16 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="e#7#41#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Information/AnnouncementCheck.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -926,6 +930,16 @@
           <folding>
             <element signature="e#1042#1087#0#HTML" expanded="true" />
             <element signature="e#1262#1281#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#7#41#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -44,7 +44,13 @@
         <div class="mdui-panel mdui-panel-popout" mdui-panel style="width: 96%;" >
 
             @for($i = count($announcement) - 1; $i >= 0; $i--)
-                <div class="mdui-panel-item">
+
+                @if($i == count($announcement) - 1)
+                    <div class="mdui-panel-item mdui-panel-item-open">
+                @else
+                    <div class="mdui-panel-item">
+                @endif
+
                     <div class="mdui-panel-item-header">
                         <div class="mdui-panel-item-title">{{ $announcement[$i]->summary }}</div>
                         <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons">&#xe923;</i> {{ $announcement[$i]->last_edit_time }}</div>

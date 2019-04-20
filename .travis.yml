@@ -1,6 +1,7 @@
 language: php
 php:
-  - 7.1.9
+  - 7.0
+  - 7.1
   - 7.2
 
 branches:
@@ -20,8 +21,8 @@ install:
   - composer install --prefer-dist --optimize-autoloader --no-dev
 
 script:
-  - ./vendor/bin/phpunit --version
-  - ./vendor/bin/phpunit -c phpunit.xml
+  - /home/travis/build/SaigyoujiYuyuko233/TouHouUniversalCollection/vendor/bin/phpunit --version
+  - /home/travis/build/SaigyoujiYuyuko233/TouHouUniversalCollection/vendor/bin/phpunit -c phpunit.xml
 
 notifications:
   webhooks:

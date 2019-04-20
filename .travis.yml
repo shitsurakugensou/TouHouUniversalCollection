@@ -17,10 +17,11 @@ env:
   - APP_DEBUG=false
 
 install:
-  - composer install --prefer-dist --optimize-autoloader --no-dev
+  - composer install --prefer-dist --optimize-autoloader
 
 script:
-  - ls vendor
+  - vendor/bin/phpunit --version
+  - vendor/bin/phpunit -c ../../phpunit.xml
 
 notifications:
   webhooks:

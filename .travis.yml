@@ -16,6 +16,11 @@ env:
 
 install:
   - composer install --prefer-dist --optimize-autoloader --no-dev
+  - apt-get install php-pear
+  - pear channel-update pear.php.net
+  - pear upgrade-all
+  - pear channel-discover pear.phpunit.de
+  - pear install -a phpunit/PHPUnit
 
 script:
   - phpunit -c phpunit.xml

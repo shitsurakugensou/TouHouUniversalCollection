@@ -20,7 +20,7 @@ install:
   - composer install --prefer-dist --optimize-autoloader --no-dev
 
 script:
-  - ls /home/travis/build/SaigyoujiYuyuko233/TouHouUniversalCollection
+  - ls
 
 notifications:
   webhooks:

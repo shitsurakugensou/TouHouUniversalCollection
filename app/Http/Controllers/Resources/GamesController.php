@@ -24,7 +24,7 @@ class GamesController extends Controller{
             return redirect($game_info->external_connection);
         }
 
-        return \response()->download($game_info->file_path,$game_info->name);
+        return \response()->download($game_info->file_path, basename($game_info->file_path));
     }
 
 }

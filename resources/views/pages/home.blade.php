@@ -44,8 +44,39 @@
             <p style="margin: 0; padding-bottom: 4px;">BUG反馈: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/vqEZFb/">点我点我~</a></p>
             <p style="margin: 0; padding-bottom: 4px;">每月问卷: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/qaUzI3b/">点我点我~</a></p>
         </div>
-
     </div>
+
+    <!--
+    <div style="padding-left: 24px; margin-top: 40px;">
+        <div class="title mdui-text-color-theme">
+            <p style="font-size: 30px;">更新日志</p>
+        </div>
+
+        <div class="mdui-panel" mdui-panel>
+
+            <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">
+                    <div class="mdui-panel-item-title">Trip name</div>
+                    <div class="mdui-panel-item-summary">Carribean cruise</div>
+                    <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                    <div class="mdui-panel-item-actions">
+                        <button class="mdui-btn mdui-ripple" mdui-panel-item-close>cancel</button>
+                        <button class="mdui-btn mdui-ripple">save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    -->
 
     <div style="padding-left: 24px; margin-top: 40px;">
         <div class="title mdui-text-color-theme">

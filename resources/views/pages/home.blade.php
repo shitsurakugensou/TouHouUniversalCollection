@@ -46,7 +46,6 @@
         </div>
     </div>
 
-    <!--
     <div style="padding-left: 24px; margin-top: 40px;">
         <div class="title mdui-text-color-theme">
             <p style="font-size: 30px;">更新日志</p>
@@ -58,6 +57,7 @@
                 <div class="mdui-panel-item-header">
                     <div class="mdui-panel-item-title">Trip name</div>
                     <div class="mdui-panel-item-summary">Carribean cruise</div>
+                    <div class="mdui-panel-item-summary">End date: Not set</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                 </div>
                 <div class="mdui-panel-item-body">
@@ -76,7 +76,6 @@
 
         </div>
     </div>
-    -->
 
     <div style="padding-left: 24px; margin-top: 40px;">
         <div class="title mdui-text-color-theme">

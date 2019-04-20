@@ -18,8 +18,8 @@ class AnnouncementCheck
      * @return mixed
      */
     public function handle($request, Closure $next){
-        $announcement = DB::table("information")->select("Announcement")->get('Announcement');
-        $announcement = isset($announcement[0]) == true ? $announcement[0]->Announcement : null;
+        $announcement = DB::table("announcement")->select("content")->get('content')->last();
+        $announcement = isset($announcement->content) == true ? $announcement->content : null;
 
         // 如果公告 == null
         if ($announcement != null){

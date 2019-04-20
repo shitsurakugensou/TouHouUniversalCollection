@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2f3ca43256fb8ddfc22f8f8db24b89c",
+    "content-hash": "43ded8bf9a757d9daab744fe5bcb662e",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1017,6 +1017,57 @@
                 "schema"
             ],
             "time": "2019-01-14T23:55:14+00:00"
+        },
+        {
+            "name": "kevinlebrun/colors.php",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevinlebrun/colors.php.git",
+                "reference": "cdda5eee41314b87cd5a8bb91b1ffc7c0210e673"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevinlebrun/colors.php/zipball/cdda5eee41314b87cd5a8bb91b1ffc7c0210e673",
+                "reference": "cdda5eee41314b87cd5a8bb91b1ffc7c0210e673",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "1.0.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Colors": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Le Brun",
+                    "email": "lebrun.k@gmail.com",
+                    "homepage": "http://kevinlebrun.fr",
+                    "role": "developer"
+                }
+            ],
+            "description": "Colors for PHP CLI scripts",
+            "homepage": "https://github.com/kevinlebrun/colors.php",
+            "keywords": [
+                "cli",
+                "color",
+                "colors",
+                "console",
+                "shell"
+            ],
+            "time": "2018-05-30T08:34:23+00:00"
         },
         {
             "name": "laravel/framework",
@@ -3628,6 +3679,51 @@
             "time": "2018-10-04T07:22:24+00:00"
         },
         {
+            "name": "codecov/codecov-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codecov/example-php.git",
+                "reference": "959e40e4e293a261ba9d1db559787cc3cc2156c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codecov/example-php/zipball/959e40e4e293a261ba9d1db559787cc3cc2156c1",
+                "reference": "959e40e4e293a261ba9d1db559787cc3cc2156c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Example": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "codecov.io",
+                    "email": "hello@codecov.io"
+                }
+            ],
+            "description": "demo repo",
+            "homepage": "https://github.com/codecov/codecov-php",
+            "keywords": [
+                "code coverage",
+                "codecov",
+                "coverage reports"
+            ],
+            "time": "2018-11-10T05:38:09+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.2.0",
             "source": {
@@ -5332,7 +5428,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "codecov/codecov-php": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

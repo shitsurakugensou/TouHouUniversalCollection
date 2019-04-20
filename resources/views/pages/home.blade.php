@@ -39,12 +39,31 @@
             <p style="font-size: 30px;">公告</p>
         </div>
 
-        <div class="mdui-typo">
-            <p class="mdui-text-color-theme-accent mdui-typo" style="margin: 0; padding-bottom: 4px;"><a href="/view/resources/lanCraft">联机工具区已开放</a></p>
-            <p style="margin: 0; padding-bottom: 4px;">BUG反馈: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/vqEZFb/">点我点我~</a></p>
-            <p style="margin: 0; padding-bottom: 4px;">每月问卷: <a class="mdui-text-color-theme-accent" href="https://www.wenjuan.com/s/qaUzI3b/">点我点我~</a></p>
-        </div>
+        <p>=> 点击展开呐~ <=</p>
 
+        <div class="mdui-panel mdui-panel-popout" mdui-panel style="width: 96%;" >
+
+            @for($i = count($announcement) - 1; $i >= 0; $i--)
+
+                @if($i == count($announcement) - 1)
+                    <div class="mdui-panel-item mdui-panel-item-open">
+                @else
+                    <div class="mdui-panel-item">
+                @endif
+
+                    <div class="mdui-panel-item-header">
+                        <div class="mdui-panel-item-title">{{ $announcement[$i]->summary }}</div>
+                        <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons">&#xe923;</i> {{ $announcement[$i]->last_edit_time }}</div>
+                        <div class="mdui-panel-item-summary"><i class="mdui-icon material-icons">&#xe255;</i> {{ $announcement[$i]->add_time }}</div>
+                        <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <div class="mdui-panel-item-body">
+                        {!! $announcement[$i]->content !!}
+                    </div>
+                </div>
+            @endfor
+
+        </div>
     </div>
 
     <div style="padding-left: 24px; margin-top: 40px;">

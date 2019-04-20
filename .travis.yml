@@ -8,11 +8,17 @@ branches:
     - develop/v1.0.0
     - master
 
+sudo: true
+
 services:
   - mysql
 
 env:
   - APP_DEBUG=false
+
+cache:
+  directories:
+  - vendor
 
 install:
   - composer install --prefer-dist --optimize-autoloader --no-dev

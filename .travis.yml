@@ -21,7 +21,7 @@ install:
 
 script:
   - vendor/bin/phpunit --version
-  - vendor/bin/phpunit -c ../../phpunit.xml
+  - vendor/bin/phpunit -c phpunit.xml
 
 notifications:
   webhooks:

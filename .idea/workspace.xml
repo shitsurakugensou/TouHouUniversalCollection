@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +34,11 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="json" value="2" />
-          <entry key="php" value="2064" />
+          <entry key="php" value="2775" />
           <entry key="travis" value="67" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="69" />
-          <entry key="yml" value="291" />
+          <entry key="yml" value="311" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -45,10 +46,10 @@
           <entry key=".env file" value="67" />
           <entry key="Blade" value="433" />
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="1631" />
+          <entry key="PHP" value="2342" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="360" />
+          <entry key="YAML" value="380" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,22 +58,22 @@
           <entry key="env" value="1" />
           <entry key="example" value="1" />
           <entry key="json" value="3" />
-          <entry key="php" value="35" />
+          <entry key="php" value="45" />
           <entry key="travis" value="3" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="1" />
-          <entry key="yml" value="2" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="3" />
+          <entry key="Blade" value="4" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="32" />
+          <entry key="PHP" value="41" />
           <entry key="UML" value="1" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="3" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -80,88 +81,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="54" column="75" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="75" />
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpunit.xml">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/games.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="315">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Access/RootTest.php">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="751">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
               <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Access/GameTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#39#56#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Access/ToolsTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#40#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Access/LanCraftTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
+                <element signature="e#45#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Access/RootController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-              <folding>
-                <element signature="e#47#72#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -169,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/kevinlebrun/colors.php/src/Colors/Color.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="555">
+              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -186,9 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_07_041914_external_connection_download.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Input/InputExternalConnection.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/import/InputExternalConnection.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Import/InputExternalConnection.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Scan/GameScan.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Import/ImportExternalConnection.php" />
@@ -206,7 +156,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_04_14_005747_online_game_tools.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Scan/OnlineToolsScan.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Scan/ToolsScan.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/lanCraft.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_14_005747_lan_craft.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Scan/lanCraftScan.php" />
@@ -231,12 +180,16 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Access/RootController.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/tests/Feature/Access/RootTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Access/GameTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Access/ToolsTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Access/LanCraftTest.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Variable/RootTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -409,7 +362,22 @@
               <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Access" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Console" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Console" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Commands" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Console" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Commands" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -464,7 +432,19 @@
               <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="factories" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="migrations" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="database" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="seeds" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -507,7 +487,7 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Feature" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Access" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Variable" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -588,12 +568,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="22306000" />
+      <workItem from="1555736417068" duration="28482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181299000" />
+    <option name="totallyTimeSpent" value="187475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -664,42 +644,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/curl/curl_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="410" column="42" lean-forward="true" selection-start-line="410" selection-start-column="42" selection-end-line="410" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/framework/views/930ad67ad4068198ee504fc4914329833f2fa1b0.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/games.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/tools.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" column="127" selection-start-line="41" selection-start-column="127" selection-end-line="41" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_06_140943_games_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Scan/ToolsScan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -727,12 +671,6 @@
           <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/CreatesApplication.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_031618_tools_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -893,16 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Information/AnnouncementCheck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#51#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="706">
@@ -944,26 +872,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kevinlebrun/colors.php/src/Colors/Color.php">
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/ToolsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#40#63#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="513">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/LanCraftTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="54" column="75" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="75" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestCase.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/CreatesApplication.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Access/RootTest.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -972,6 +915,33 @@
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="48" lean-forward="true" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="e#31#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/GameTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#39#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/kevinlebrun/colors.php/src/Colors/Color.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -985,40 +955,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/GameTest.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="616">
+          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/RootTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#39#56#0#PHP" expanded="true" />
+            <element signature="e#42#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/ToolsTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Information/AnnouncementCheck.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="495">
+          <caret line="33" column="61" lean-forward="true" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
           <folding>
-            <element signature="e#40#63#0#PHP" expanded="true" />
+            <element signature="e#51#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Access/LanCraftTest.php">
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/games.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#45#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>

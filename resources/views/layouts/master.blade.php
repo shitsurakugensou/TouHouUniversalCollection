@@ -71,7 +71,7 @@
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-teal-a200">&#xe869;</i>
                     <div class="mdui-list-item-content">辅助工具</div>
                 </li>
-                <li class="mdui-list-item mdui-ripple">
+                <li class="mdui-list-item mdui-ripple" onclick="window.location.href='/view/resources/tutorials'">
                     <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green-a700">&#xe431;</i>
                     <div class="mdui-list-item-content">教程攻略</div>
                 </li>

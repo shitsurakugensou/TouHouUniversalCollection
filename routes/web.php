@@ -25,6 +25,7 @@ Route::prefix("/view/resources")
         Route::get('/games', "Resources\GamesController@show");
         Route::get('/tools', "Resources\ToolsController@show");
         Route::get('/lanCraft', "Resources\LanCraftController@show");
+        Route::get('/tutorials', "Resources\TutorialsController@show");
     }
 );
 
@@ -32,4 +33,6 @@ Route::prefix("/download/resources")->group(function (){
     Route::get('/games/{id}', "Resources\GamesController@download");
     Route::get('/tools/{id}', "Resources\ToolsController@download");
     Route::get('/lanCraft/{id}', "Resources\LanCraftController@download");
+    Route::get('/tutorials/{id}', "Resources\TutorialsController@download");
+
 });

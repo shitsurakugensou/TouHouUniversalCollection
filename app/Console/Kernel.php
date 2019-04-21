@@ -17,7 +17,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\Scan\ToolsScan::class,
         \App\Console\Commands\Scan\lanCraftScan::class,
 
-        \App\Console\Commands\Test\initDB::class,
+        \App\Console\Commands\Test\initTest::class,
 
         \App\Console\Commands\Import\ImportExternalConnection::class,
     ];

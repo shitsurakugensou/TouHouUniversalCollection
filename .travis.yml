@@ -3,6 +3,7 @@ language: php
 php:
   - 7.1
   - 7.2
+  - 7.3
 
 matrix:
   fast_finish: true
@@ -34,7 +35,7 @@ install:
   - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
   - travis_retry cp .env.travis .env
   - travis_retry php artisan migrate
-  - travis_retry php artisan test:initDB
+  - travis_retry php artisan test:initTest
 
 script:
   - if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;

@@ -17,7 +17,7 @@ class ToolsTest extends TestCase
 
         $response = $this->get('/view/resources/tools');
 
-        $response->assertSee("qwq")
+        $response->assertSee("awa")
             ->assertViewIs('pages.tools');
 
         echo $color->apply("magenta","\n[Testing]");

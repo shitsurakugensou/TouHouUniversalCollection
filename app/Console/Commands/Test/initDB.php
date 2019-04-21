@@ -58,7 +58,7 @@ class initDB extends Command
             "description" => "test game",
             "file_size" => "1",
             "game_logo" => "images/touhou.png",
-            "file_path" => app_path("resources/games/qwq.zip")
+            "file_path" => public_path("resources/games/qwq.zip")
         ]);
 
         echo $color("init the games\n")->apply("light_green");
@@ -69,11 +69,11 @@ class initDB extends Command
         file_put_contents(public_path("resources/tools/awa.zip"), "test file");
 
         DB::table("tools")->insert([
-            "name" => "qwq",
+            "name" => "awa",
             "description" => "test tools",
             "file_size" => "1",
             "format" => "zip",
-            "file_path" => public_path("resources/tools/qwq.zip")
+            "file_path" => public_path("resources/tools/awa.zip")
         ]);
 
         echo $color("init the tools\n")->apply("light_green");

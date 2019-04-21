@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +35,7 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="json" value="2" />
-          <entry key="php" value="3021" />
+          <entry key="php" value="3167" />
           <entry key="travis" value="67" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="69" />
@@ -45,7 +47,7 @@
           <entry key=".env file" value="67" />
           <entry key="Blade" value="433" />
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="2588" />
+          <entry key="PHP" value="2734" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="380" />
@@ -57,7 +59,7 @@
           <entry key="env" value="1" />
           <entry key="example" value="1" />
           <entry key="json" value="3" />
-          <entry key="php" value="48" />
+          <entry key="php" value="59" />
           <entry key="travis" value="3" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="1" />
@@ -67,9 +69,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="4" />
+          <entry key="Blade" value="5" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="54" />
           <entry key="UML" value="1" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="4" />
@@ -80,10 +82,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Download/GamesTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#42#59#0#PHP" expanded="true" />
               </folding>
@@ -92,31 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/LanCraftTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding>
-                <element signature="e#42#59#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/games.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+            <state relative-caret-position="346">
+              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding>
                 <element signature="e#45#62#0#PHP" expanded="true" />
               </folding>
@@ -124,17 +105,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="685">
               <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#42#59#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/RootTest.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Download/ToolsTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
@@ -146,10 +130,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/kevinlebrun/colors.php/src/Colors/Color.php">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/Download/LanCraftTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#42#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -165,9 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Console/Commands/Import/ImportExternalConnection.php" />
-        <option value="$PROJECT_DIR$/public/resources/qwq.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_09_105839_fix_games_table_int_err.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_06_140943_games_table.php" />
         <option value="$PROJECT_DIR$/app/Games.php" />
@@ -194,7 +187,6 @@
         <option value="$PROJECT_DIR$/tests/Feature/ExampleTest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/GamesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/LanCraftController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_20_050030_annoncements.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Entrance/RootController.php" />
         <option value="$PROJECT_DIR$/app/Access/RootModel.php" />
@@ -213,9 +205,13 @@
         <option value="$PROJECT_DIR$/tests/Feature/Variable/RootTest.php" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/LanCraftTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Download/GamesTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Download/ToolsTest.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Download/LanCraftTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" />
       </list>
     </option>
   </component>
@@ -513,6 +509,13 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Feature" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Download" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TouHouUniversalCollection" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tests" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Feature" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Variable" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -522,7 +525,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="access&#9;null&#9;null&#10;.ENV.T&#9;FILE&#9;file://D:/PHP application/TouHouUniversalCollection/.env.travis&#10;93&#9;FILE&#9;file://D:/PHP application/TouHouUniversalCollection/storage/framework/views/930ad67ad4068198ee504fc4914329833f2fa1b0.php" />
+    <property name="SearchEverywhereHistoryKey" value="app_pa&#9;null&#9;null&#10;access&#9;null&#9;null&#10;.ENV.T&#9;FILE&#9;file://D:/PHP application/TouHouUniversalCollection/.env.travis&#10;93&#9;FILE&#9;file://D:/PHP application/TouHouUniversalCollection/storage/framework/views/930ad67ad4068198ee504fc4914329833f2fa1b0.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -594,12 +597,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="29548000" />
+      <workItem from="1555736417068" duration="31444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188541000" />
+    <option name="totallyTimeSpent" value="190437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,41 +673,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Tools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_031618_tools_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_041914_external_connection_download.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/lanCraft.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4427">
@@ -809,13 +777,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Resources/LanCraftController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
@@ -1008,20 +969,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/tools.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="735">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="e#42#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="270">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Download/LanCraftTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#42#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Download/ToolsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#42#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Download/GamesTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#42#59#0#PHP" expanded="true" />
           </folding>
@@ -1030,7 +1028,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/LanCraftTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
+        <state relative-caret-position="70">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#42#59#0#PHP" expanded="true" />
@@ -1040,10 +1038,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+        <state relative-caret-position="346">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding>
             <element signature="e#45#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#42#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

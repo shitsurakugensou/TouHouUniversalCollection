@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +33,7 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="json" value="2" />
-          <entry key="php" value="2973" />
+          <entry key="php" value="3021" />
           <entry key="travis" value="67" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="69" />
@@ -45,7 +45,7 @@
           <entry key=".env file" value="67" />
           <entry key="Blade" value="433" />
           <entry key="JSON" value="2" />
-          <entry key="PHP" value="2540" />
+          <entry key="PHP" value="2588" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="380" />
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/LanCraftTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+            <state relative-caret-position="46">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="e#42#59#0#PHP" expanded="true" />
               </folding>
@@ -112,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="646">
+              <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
               <folding>
                 <element signature="e#45#62#0#PHP" expanded="true" />
               </folding>
@@ -211,11 +211,11 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/RootTest.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/LanCraftTest.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" />
       </list>
     </option>
   </component>
@@ -594,12 +594,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="29298000" />
+      <workItem from="1555736417068" duration="29548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188291000" />
+    <option name="totallyTimeSpent" value="188541000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -984,16 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="e#45#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1040,10 +1030,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/LanCraftTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        <state relative-caret-position="46">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#42#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Test/initDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
+          <folding>
+            <element signature="e#45#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

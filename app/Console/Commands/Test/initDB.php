@@ -49,6 +49,8 @@ class initDB extends Command
         echo $color("init the Announcement\n")->apply("light_green");
 
 
+        is_dir(public_path("resources/games")) == false ? mkdir(public_path("resources/games")) : true;
+
         file_put_contents(public_path("resources/games/qwq.zip"), "test file");
 
         DB::table("games")->insert([
@@ -62,6 +64,8 @@ class initDB extends Command
         echo $color("init the games\n")->apply("light_green");
 
 
+        is_dir(public_path("resources/tools")) == false ? mkdir(public_path("resources/tools")) : true;
+
         file_put_contents(public_path("resources/tools/awa.zip"), "test file");
 
         DB::table("tools")->insert([
@@ -74,6 +78,8 @@ class initDB extends Command
 
         echo $color("init the tools\n")->apply("light_green");
 
+
+        is_dir(public_path("resources/lanCraft")) == false ? mkdir(public_path("resources/lanCraft")) : true;
 
         file_put_contents(public_path("resources/lanCraft/qwq.zip"), "test file");
 

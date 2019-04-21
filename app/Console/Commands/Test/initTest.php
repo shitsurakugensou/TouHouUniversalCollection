@@ -6,21 +6,21 @@ use Colors\Color;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;
 
-class initDB extends Command
+class initTest extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'test:initDB';
+    protected $signature = 'test:initTest';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Init the DB for the PhpUnit test';
+    protected $description = 'Init the testing env for the PhpUnit test';
 
     /**
      * Create a new command instance.
@@ -89,6 +89,21 @@ class initDB extends Command
             "file_size" => "1",
             "format" => "zip",
             "file_path" => public_path("resources/lanCraft/qwq.zip")
+        ]);
+
+        echo $color("init the lanCraft\n")->apply("light_green");
+
+
+        is_dir(public_path("resources/tutorial")) == false ? mkdir(public_path("resources/tutorial")) : true;
+
+        file_put_contents(public_path("resources/tutorial/qwq.pdf"), "test file");
+
+        DB::table("tutorial")->insert([
+            "name" => "qwq",
+            "description" => "test tutorials",
+            "file_size" => "1",
+            "format" => "zip",
+            "file_path" => public_path("resources/tutorial/qwq.pdf")
         ]);
 
         echo $color("init the lanCraft\n")->apply("light_green");

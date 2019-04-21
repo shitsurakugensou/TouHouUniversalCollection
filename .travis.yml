@@ -56,9 +56,7 @@ after_success:
 - rm -rf .vagrant
 - rm -rf Vagrantfile
 - rm -rf public/resources
-- rm -rf vendor
-- rm -rf .git
-- tar -cvf TouHouUC.tar ./
+- tar --exclude="./.git" --exclude="./vendor"  -cvf TouHouUC.tar ./
 
 deploy:
   provider: releases
@@ -70,3 +68,5 @@ deploy:
   on:
     repo: SaigyoujiYuyuko233/TouHouUniversalCollection
     branch: develop/v1.0.0
+    tags: true
+    

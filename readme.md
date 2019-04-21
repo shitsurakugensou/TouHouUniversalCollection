@@ -4,7 +4,7 @@
 <a href="https://travis-ci.org/SaigyoujiYuyuko233/TouHouUniversalCollection/"><img src="https://travis-ci.org/SaigyoujiYuyuko233/TouHouUniversalCollection.svg?branch=master"></a>
 <a href="https://github.com/SaigyoujiYuyuko233/TouHouUniversalCollection/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-GPLv3-blue.svg" alt="Total Downloads"></a>
 <a href="https://github.com/SaigyoujiYuyuko233/TouHouUniversalCollection/releases"><img src="https://img.shields.io/github/release/SaigyoujiYuyuko233/TouHouUniversalCollection.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/github/languages/code-size/SaigyoujiYuyuko233/TouHouUniversalCollection.svg"></a>
+<a href=""><img src="https://img.shields.io/github/languages/code-size/SaigyoujiYuyuko233/TouHouUniversalCollection.svg"></a>
 </p>
 
 ## About THUC

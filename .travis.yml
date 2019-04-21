@@ -31,6 +31,7 @@ services:
   - mysql
 
 install:
+  - git checkout develop/v1.0.0
   - travis_retry composer self-update
   - travis_retry composer install --prefer-dist --optimize-autoloader
   - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'

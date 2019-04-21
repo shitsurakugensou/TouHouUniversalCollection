@@ -58,7 +58,7 @@ after_success:
 - rm -rf public/resources
 - rm -rf vendor
 - rm -rf .git
-- tar -cvf TouHouUC.tar ~/
+- tar -cvf TouHouUC.tar ./
 
 deploy:
   provider: releases

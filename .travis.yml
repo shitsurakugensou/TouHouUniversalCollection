@@ -64,9 +64,9 @@ deploy:
   api_key:
     secure: geW8eA2nN18rhUnjfU9vVWUwUUQdhWNWqzX52KuxGRgzsMobXUlVN9IbzjAWU+m7JHBhxezorVHu2O6aSpWewNsMlBkTW6TC4AxM6DMgt2t66hAdDXybvXfJBhnVD2GI1r9MiIrWmhqmFFUkTsasCLIjJReAnZ7JcBlocVDErSCRRQBAzo80Kg6cd8UwVbtM/LMmT0gsOFQP56mH69xqeVCYw1drXrsgmRxeQh8WCYyfbzXfCRH6W+0cJOD6ENYwnoz9/3kVet1UVg1l2mZKfaix5WZ2g38hg8K+7dHe5LdpRR+eL+t9ulCoSY6trX7kpgf1xlC076sC7QCerEvg0zQ2R41OLoAaMmCfIQFlBHqIJnDR23brR6hOGn2ee36REwmFRT2YZgaC3vLJzBct/BsmNc7W1aTddKVAFlW7iDp8rZ/fn7MYymNsHwJiXLX6C5oYgG7b9JwvV9mhMJn+onOecyib1QhqhTIdLBPFj5kY+g6OLGuPit653gk71AxoXhbAYyH9WiB4HYNUPpQFiV7vz/qCHiGm2l3eFyBqNMzdpO55t/IMzJ26PMCi/tpnBuka7zpl+wuNiUqpPftigNxl9UFcGCpwYrGvZW5BaBPi4ZtbISVAJk5q+L8yGYKtyqtqu04yUi1KroaxnDNgNJmJUvYQZqXtays3GBLrJIs=
 
-  file: 'TouHouUC.tar'
+  file: './TouHouUC.tar'
   on:
     repo: SaigyoujiYuyuko233/TouHouUniversalCollection
     branch: develop/v1.0.0
     tags: true
-    
+

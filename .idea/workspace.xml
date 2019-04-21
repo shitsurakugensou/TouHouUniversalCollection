@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +40,7 @@
           <entry key="travis" value="67" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="69" />
-          <entry key="yml" value="439" />
+          <entry key="yml" value="487" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -52,7 +53,7 @@
           <entry key="PHP" value="2897" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="508" />
+          <entry key="YAML" value="556" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -131,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+            <state relative-caret-position="511">
+              <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -609,7 +610,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201641000" />
+    <option name="totallyTimeSpent" value="202285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1022,8 +1023,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        <state relative-caret-position="511">
+          <caret line="69" column="15" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
         </state>
       </provider>
     </entry>

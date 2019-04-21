@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9762d3f-dd2c-4935-b18d-64196fea0e7f" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +34,8 @@
         <counts>
           <entry key="dummy" value="8" />
           <entry key="json" value="2" />
-          <entry key="php" value="3167" />
+          <entry key="md" value="115" />
+          <entry key="php" value="3190" />
           <entry key="travis" value="67" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="69" />
@@ -45,8 +45,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="67" />
-          <entry key="Blade" value="433" />
+          <entry key="Blade" value="456" />
           <entry key="JSON" value="2" />
+          <entry key="Markdown" value="115" />
           <entry key="PHP" value="2734" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="1" />
@@ -59,7 +60,8 @@
           <entry key="env" value="1" />
           <entry key="example" value="1" />
           <entry key="json" value="3" />
-          <entry key="php" value="59" />
+          <entry key="md" value="1" />
+          <entry key="php" value="60" />
           <entry key="travis" value="3" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="1" />
@@ -69,8 +71,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="5" />
-          <entry key="Blade" value="5" />
+          <entry key="Blade" value="6" />
           <entry key="JSON" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="PHP" value="54" />
           <entry key="UML" value="1" />
           <entry key="XML" value="1" />
@@ -105,14 +108,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="400">
+              <caret line="32" column="94" lean-forward="true" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
               <folding>
                 <element signature="e#42#59#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="285">
+                <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/tools.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -161,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_09_105839_fix_games_table_int_err.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_06_140943_games_table.php" />
         <option value="$PROJECT_DIR$/app/Games.php" />
         <option value="$PROJECT_DIR$/.env.example" />
@@ -169,7 +192,6 @@
         <option value="$PROJECT_DIR$/storage/framework/views/930ad67ad4068198ee504fc4914329833f2fa1b0.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/games.blade.php" />
         <option value="$PROJECT_DIR$/app/Tools.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/tools.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_14_005747_online_game_tools.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Scan/OnlineToolsScan.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Scan/ToolsScan.php" />
@@ -212,6 +234,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Resources/ToolsController.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/Test/initDB.php" />
         <option value="$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/tools.blade.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -597,12 +621,12 @@
       <workItem from="1555721920020" duration="567000" />
       <workItem from="1555722649002" duration="5434000" />
       <workItem from="1555728098245" duration="6176000" />
-      <workItem from="1555736417068" duration="31444000" />
+      <workItem from="1555736417068" duration="33781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190437000" />
+    <option name="totallyTimeSpent" value="192774000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,13 +697,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4427">
-          <caret line="236" column="2" selection-start-line="236" selection-start-column="2" selection-end-line="236" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/uxweb/sweet-alert/src/SweetAlert/SweetAlert.php" />
     <entry file="file://$PROJECT_DIR$/vendor/uxweb/sweet-alert/src/SweetAlert/ConvertMessagesIntoSweetAlert.php" />
     <entry file="file://$PROJECT_DIR$/vendor/uxweb/sweet-alert/src/SweetAlert/functions.php" />
@@ -976,9 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/tools.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/GamesTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -1046,13 +1060,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/tools.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/Variable/ToolsTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="400">
+          <caret line="32" column="94" lean-forward="true" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
           <folding>
             <element signature="e#42#59#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

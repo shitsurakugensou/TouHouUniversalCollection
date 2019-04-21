@@ -43,49 +43,31 @@ class ImportExternalConnection extends Command
          */
         $stdin = fopen('php://stdin', 'r');
 
-        echo "Input the config file: ";
-        $config = fread($stdin, 1000);
-        $config = str_replace("\\","/",$config);
-        $config = str_replace(PHP_EOL,"",$config);
-
-        // check the file
-        if (is_file($config) == false){
-            echo "That is not a dir. Check it again!\n";
-            return false;
-        }
-
+        echo "Input the ex_connection base url (https://xxx.xx.xx/xx/xx/): ";
+        $url = fread($stdin, 1000);
 
         fclose($stdin);
 
         $start = microtime(true);
 
-        // parse the config
-        $config = file_get_contents($config);
-        $config = json_decode($config,true);
+        // get the number of game
+        $games = DB::table("games")->get()->all();
 
-        echo "\nConfig name: ".$config['name'];
-        echo "\nConfig description:".$config['description']."\n";
+        echo "\nReady to update the data...\n\n";
 
-        echo "\nReady to input the config...\n\n";
+        for ($i = 0; $i < count($games); $i++){
+            $game_name = $games[$i]->name;
+            $game_path = $games[$i]->file_path;
 
-        for ($i = 0; $i < count($config['data']); $i++){
+            DB::table("games")->where(["name" => $game_name])->update([
+                "external_connection" => str_replace("\n","",$url . rawurlencode(basename($game_path)))
+            ]);
 
-            $name = $config['data'][$i]['name'];
-            $url = $config['data'][$i]['url'];
-
-            if (DB::table("games")->where("name",$name)->count() == 1){
-                DB::table("games")->where("name",$name)->update([
-                    "external_connection" => $url
-                ]);
-
-                echo "$name - Updated\n";
-            }else{
-                echo "Cannot find: $name in database - Skipping\n";
-            }
-
+            echo $game_name . " -- Updated\n";
         }
 
         echo "\nFinish the ExternalConnection import. Time used: ".round(microtime(true) - $start,4)."ms\n\n";
 
+        return true;
     }
 }

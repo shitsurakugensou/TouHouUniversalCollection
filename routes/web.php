@@ -35,4 +35,5 @@ Route::prefix("/download/resources")->group(function (){
     Route::get('/lanCraft/{id}', "Resources\LanCraftController@download");
     Route::get('/tutorials/{id}', "Resources\TutorialsController@download");
 
+    Route::get('/games/{id}/ec', "Resources\GamesController@ecDownload");
 });

@@ -27,4 +27,17 @@ class GamesController extends Controller{
         return \response()->download($game_info->file_path, basename($game_info->file_path));
     }
 
+    public function ecDownload($id){
+        $model = new Games();
+
+        $game_info = $model->getGame($id);
+        $model->addDownloadTimes($id);
+
+        if($game_info->external_connection != null){
+            return redirect(str_replace("\n","",$game_info->external_connection));
+        }
+
+        //return \response()->download($game_info->file_path, basename($game_info->file_path));
+    }
+
 }

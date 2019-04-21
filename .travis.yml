@@ -1,9 +1,8 @@
 language: php
-
 php:
-  - 7.1
-  - 7.2
-  - 7.3
+- 7.1
+- 7.2
+- 7.3
 
 matrix:
   fast_finish: true
@@ -17,36 +16,58 @@ env:
 
 cache:
   directories:
-  - $HOME/.composer/cache
+  - "$HOME/.composer/cache"
 
 branches:
   only:
-    - develop/v1.0.0
-    - master
+  - develop/v1.0.0
+  - master
 
 sudo: true
 
 services:
-  - mysql
+- mysql
 
 install:
-  - travis_retry composer self-update
-  - travis_retry composer install --prefer-dist --optimize-autoloader
-  - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
-  - travis_retry cp .env.travis .env
-  - travis_retry php artisan migrate
-  - travis_retry php artisan test:initTest
+- travis_retry sudo apt-get zip
+- travis_retry composer self-update
+- travis_retry composer install --prefer-dist --optimize-autoloader
+- travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
+- travis_retry cp .env.travis .env
+- travis_retry php artisan migrate
+- travis_retry php artisan test:initTest
 
 script:
-  - if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;
-  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit -c phpunit.xml --coverage-clover=coverage.xml; fi;
-  #- if [ "$TEST_SUITE" = "Integration" ]; then vendor/bin/phpunit tests/Integration; fi;
+- if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;
+- if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit -c phpunit.xml --coverage-clover=coverage.xml; fi;
 
 notifications:
   email: false
+
   webhooks:
-    - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/209387eb347a474a815bc9224be9b265/790fd74b-5ce0-4ee8-b240-65585e725f00
-    - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/ec3a1abfe11e46ee9b387726896b1b60/790fd74b-5ce0-4ee8-b240-65585e725f00
+  - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/209387eb347a474a815bc9224be9b265/790fd74b-5ce0-4ee8-b240-65585e725f00
+  - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/ec3a1abfe11e46ee9b387726896b1b60/790fd74b-5ce0-4ee8-b240-65585e725f00
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
+- rm -rf .env
+- rm -rf .env.travis
+- rm -rf Homestead.yaml
+- rm -rf .idea
+- rm -rf .vagrant
+- rm -rf Vagrantfile
+- rm -rf public/resources
+- rm -rf vendor
+- rm -rf .git
+- tar -cvf TouHouUC.tar ~/
+
+deploy:
+  provider: releases
+
+  api_key:
+    secure: geW8eA2nN18rhUnjfU9vVWUwUUQdhWNWqzX52KuxGRgzsMobXUlVN9IbzjAWU+m7JHBhxezorVHu2O6aSpWewNsMlBkTW6TC4AxM6DMgt2t66hAdDXybvXfJBhnVD2GI1r9MiIrWmhqmFFUkTsasCLIjJReAnZ7JcBlocVDErSCRRQBAzo80Kg6cd8UwVbtM/LMmT0gsOFQP56mH69xqeVCYw1drXrsgmRxeQh8WCYyfbzXfCRH6W+0cJOD6ENYwnoz9/3kVet1UVg1l2mZKfaix5WZ2g38hg8K+7dHe5LdpRR+eL+t9ulCoSY6trX7kpgf1xlC076sC7QCerEvg0zQ2R41OLoAaMmCfIQFlBHqIJnDR23brR6hOGn2ee36REwmFRT2YZgaC3vLJzBct/BsmNc7W1aTddKVAFlW7iDp8rZ/fn7MYymNsHwJiXLX6C5oYgG7b9JwvV9mhMJn+onOecyib1QhqhTIdLBPFj5kY+g6OLGuPit653gk71AxoXhbAYyH9WiB4HYNUPpQFiV7vz/qCHiGm2l3eFyBqNMzdpO55t/IMzJ26PMCi/tpnBuka7zpl+wuNiUqpPftigNxl9UFcGCpwYrGvZW5BaBPi4ZtbISVAJk5q+L8yGYKtyqtqu04yUi1KroaxnDNgNJmJUvYQZqXtays3GBLrJIs=
+
+  file: ''
+  on:
+    repo: SaigyoujiYuyuko233/TouHouUniversalCollection
+    branch: develop/v1.0.0

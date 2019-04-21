@@ -1,7 +1,7 @@
 <p align="center"><img src="http://resources.yoyoko233.top:8000/StaticStorage/logo-THUC.png"></p>
-
 <p align="center">
 <img alt="Travis (.org)" src="https://img.shields.io/travis/SaigyoujiYuyuko233/TouHouUniversalCollection.svg?style=flat-square">
+<img alt="Php Version" src="https://img.shields.io/badge/PHP%20Version-%3E%3D%207.1-red.svg?style=flat-square">
 <a href="https://github.com/SaigyoujiYuyuko233/TouHouUniversalCollection/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square" alt="Total Downloads"></a>
 <a href="https://github.com/SaigyoujiYuyuko233/TouHouUniversalCollection/releases"><img src="https://img.shields.io/github/release/SaigyoujiYuyuko233/TouHouUniversalCollection.svg?style=flat-square" alt="Latest Stable Version"></a>
 <a href=""><img src="https://img.shields.io/github/languages/code-size/SaigyoujiYuyuko233/TouHouUniversalCollection.svg?style=flat-square"></a>

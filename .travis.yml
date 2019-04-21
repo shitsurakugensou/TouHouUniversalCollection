@@ -1,4 +1,5 @@
 language: php
+
 php:
 - 7.1
 - 7.2
@@ -6,6 +7,7 @@ php:
 
 matrix:
   fast_finish: true
+
   allow_failures:
   - env: TEST_SUITE=Coverage
 
@@ -26,21 +28,22 @@ branches:
 sudo: true
 
 services:
-- mysql
+  - mysql
 
 install:
-- travis_retry composer self-update
-- travis_retry composer install --prefer-dist --optimize-autoloader
-- travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
-- travis_retry cp .env.travis .env
-- travis_retry php artisan migrate
-- travis_retry php artisan test:initTest
+  - travis_retry composer self-update
+  - travis_retry composer install --prefer-dist --optimize-autoloader
+  - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'
+  - travis_retry cp .env.travis .env
+  - travis_retry php artisan migrate
+  - travis_retry php artisan test:initTest
 
 script:
-- if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;
-- if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit -c phpunit.xml --coverage-clover=coverage.xml; fi;
+  - if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;
+  - if [ "$TEST_SUITE" = "Coverage" ]; then vendor/bin/phpunit -c phpunit.xml --coverage-clover=coverage.xml; fi;
 
 notifications:
+
   email: false
 
   webhooks:
@@ -48,24 +51,23 @@ notifications:
   - https://outlook.office.com/webhook/7744ba6a-128c-4acd-b861-f5e15826c761@5f8fa22c-3e35-48b0-96e4-8999bde9ff62/TravisCI/ec3a1abfe11e46ee9b387726896b1b60/790fd74b-5ce0-4ee8-b240-65585e725f00
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
-- rm -rf .env
-- rm -rf .env.travis
-- rm -rf Homestead.yaml
-- rm -rf .idea
-- rm -rf .vagrant
-- rm -rf Vagrantfile
-- tar --exclude="./public/resources" --exclude="./.git" --exclude="./vendor"  -cvf TouHouUC.tar ./
+  - bash <(curl -s https://codecov.io/bash)
+  - tar --exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"
+    --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"
+    --exclude="./.git" --exclude="./vendor"  -cvf TouHouUC.tar ./
 
 deploy:
+
   provider: releases
 
   api_key:
-    secure: geW8eA2nN18rhUnjfU9vVWUwUUQdhWNWqzX52KuxGRgzsMobXUlVN9IbzjAWU+m7JHBhxezorVHu2O6aSpWewNsMlBkTW6TC4AxM6DMgt2t66hAdDXybvXfJBhnVD2GI1r9MiIrWmhqmFFUkTsasCLIjJReAnZ7JcBlocVDErSCRRQBAzo80Kg6cd8UwVbtM/LMmT0gsOFQP56mH69xqeVCYw1drXrsgmRxeQh8WCYyfbzXfCRH6W+0cJOD6ENYwnoz9/3kVet1UVg1l2mZKfaix5WZ2g38hg8K+7dHe5LdpRR+eL+t9ulCoSY6trX7kpgf1xlC076sC7QCerEvg0zQ2R41OLoAaMmCfIQFlBHqIJnDR23brR6hOGn2ee36REwmFRT2YZgaC3vLJzBct/BsmNc7W1aTddKVAFlW7iDp8rZ/fn7MYymNsHwJiXLX6C5oYgG7b9JwvV9mhMJn+onOecyib1QhqhTIdLBPFj5kY+g6OLGuPit653gk71AxoXhbAYyH9WiB4HYNUPpQFiV7vz/qCHiGm2l3eFyBqNMzdpO55t/IMzJ26PMCi/tpnBuka7zpl+wuNiUqpPftigNxl9UFcGCpwYrGvZW5BaBPi4ZtbISVAJk5q+L8yGYKtyqtqu04yUi1KroaxnDNgNJmJUvYQZqXtays3GBLrJIs=
+    secure: g1lZQPE+Jc8A2AMk2+B5b4nwQQp77UDl4HavDRew/4ptln9jyXnG6X7Cl7RzA5S4KY6kkRdChVMHBZWCRJ3kBZd/xJc/l1Le9HM219l1XQh+GKldabw4NIJLUVlRYhLIeXTxWM/il2WmGFdQbVXxZg/xn/eseKwARi749it/maM4AgtZ1wW560osdGEvsx8WdJeNdIrtqkWJU0/6fB7D1m1Rwog0RYMH5NZ0eQJYXaGqJoj5WkpqfugT/DJkRKDDpqz4dp3BnBsotHvFSbvkRa48vQGYKypuTE6qX2E8vtctNVx6c2ula4VBe1iiqIMJ06ZAEIzSDXLYVoOIqPP8gURYGAWfxj8T+i7JgU/i0HcI2cHUNxf25PpEB3niXBC8OB/T2FDesth7KAjDcu5ZPBOosXr2yBQQnTOFOLcZ+6G+4SeA5LodvhEmNyBHJgd6wvDF2HvNtQ7dvRvEXmTkRmlGo0Lb0vmHDLFDIGRHI/urnZyfQ7vM4lHSBchHgSOXWsRp6A1U1lx7EwybNrJPCeL6exv3clMi0UMwyYW5w0dK9Y+rxNBkv9+dSDMML1P++9sQXX76tp0q6LWEtDiRbKDKsxcrjNoTGvK2mBIn3CqyjwFByCRJOo99OPRG1aHPLUf4RIXdRYWVv9yaI6RDUfc7RXmaOT4BiQfwaaL9ikQ=
 
-  file: 'TouHouUC.tar'
+  file: TouHouUC.tar
+
+  skip_cleanup: true
+
   on:
     repo: SaigyoujiYuyuko233/TouHouUniversalCollection
     branch: develop/v1.0.0
-    tags: false
-
+    tags: true

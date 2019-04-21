@@ -36,7 +36,7 @@
           <entry key="travis" value="67" />
           <entry key="xml" value="1" />
           <entry key="yaml" value="69" />
-          <entry key="yml" value="697" />
+          <entry key="yml" value="706" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -49,7 +49,7 @@
           <entry key="PHP" value="3368" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="XML" value="1" />
-          <entry key="YAML" value="766" />
+          <entry key="YAML" value="775" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="796">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
             </state>
           </provider>
         </entry>
@@ -533,12 +533,12 @@
       <workItem from="1555728098245" duration="6176000" />
       <workItem from="1555736417068" duration="38420000" />
       <workItem from="1555837300849" duration="1672000" />
-      <workItem from="1555838990614" duration="3711000" />
+      <workItem from="1555838990614" duration="4011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210595000" />
+    <option name="totallyTimeSpent" value="210895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -942,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="796">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>

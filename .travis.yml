@@ -69,6 +69,6 @@ deploy:
   skip_cleanup: true
 
   on:
-    repo: SaigyoujiYuyuko233/TouHouUniversalCollection
-    branch: develop/v1.0.0
     tags: true
+    all_branches: true
+    repo: SaigyoujiYuyuko233/TouHouUniversalCollection

@@ -29,7 +29,6 @@ services:
 - mysql
 
 install:
-- travis_retry sudo apt-get zip
 - travis_retry composer self-update
 - travis_retry composer install --prefer-dist --optimize-autoloader
 - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'

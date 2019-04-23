@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'jenkins-php-docker'
       args '/bin/bash'
+      image 'docker.io/voduytuan/jenkins-php-docker'
     }
 
   }

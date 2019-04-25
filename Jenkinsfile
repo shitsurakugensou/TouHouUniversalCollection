@@ -23,10 +23,7 @@ systemctl start mysqld
 
 echo "init the mysql"
 mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"
-mysql -e "CREATE DATABASE IF NOT EXISTS travis;"
-
-echo "using the bash..."
-/bin/bash'''
+mysql -e "CREATE DATABASE IF NOT EXISTS travis;"'''
       }
     }
     stage('Installing') {

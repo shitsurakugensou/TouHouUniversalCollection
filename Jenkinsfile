@@ -14,14 +14,14 @@ pipeline {
 docker run -it -d -e "container=docker" --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup yuyuko/jenkinsci-laravel-docker /usr/sbin/init
 
 echo "start the php-fpm service"
-systemctl start php72-php-fpm
+systemctl start php-fpm
 
 echo "start mysql service"
-mysqld_safe --skip-grant-tables &
+systemctl start mysqld
 
 echo "init the mysql"
-mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"
-mysql -e "CREATE DATABASE IF NOT EXISTS travis;"'''
+/usr/bin/mysqladmin password
+/usr/bin/mysqladmin create travis'''
       }
     }
     stage('Installing') {

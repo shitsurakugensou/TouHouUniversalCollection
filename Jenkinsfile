@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'yuyuko/jenkinsci-laravel-docker'
-      args '--privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup /usr/sbin/init '
+      args '--privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup -c /usr/sbin/init '
     }
 
   }

@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'yuyuko/jenkinsci-laravel-docker'
-      args '--privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup -c /usr/sbin/init '
+      args '--privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup'
     }
 
   }
@@ -11,9 +11,6 @@ pipeline {
       steps {
         echo 'Start the services'
         sh '''#!/usr/bin/env bash
-# init
-echo "init..."
-/usr/sbin/init
 
 echo "start the php-fpm service"
 systemctl start php72-php-fpm.service

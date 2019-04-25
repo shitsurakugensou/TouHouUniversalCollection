@@ -1,7 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'docker.io/voduytuan/jenkins-php-docker'
+      image 'yuyuko/jenkinsci-laravel-docker'
+      args '--privileged=true'
     }
 
   }
@@ -28,5 +29,8 @@ php artisan test:initTest'''
         archiveArtifacts(onlyIfSuccessful: true, excludes: '--exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"     --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"     --exclude="./.git" --exclude="./vendor" ', artifacts: 'TouHouUC')
       }
     }
+  }
+  environment {
+    container = 'docker'
   }
 }

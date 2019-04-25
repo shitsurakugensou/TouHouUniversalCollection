@@ -1,5 +1,11 @@
 pipeline {
-  agent none
+  agent {
+    docker {
+      image 'yuyuko/jenkinsci-laravel-docker'
+      args '-d -e "container=docker" --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup'
+    }
+
+  }
   stages {
     stage('service_start') {
       steps {

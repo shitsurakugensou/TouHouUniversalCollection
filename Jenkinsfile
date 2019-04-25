@@ -16,10 +16,10 @@ echo "init..."
 /usr/sbin/init
 
 echo "start the php-fpm service"
-systemctl php72-php-fpm.service start
+systemctl start php72-php-fpm.service
 
 echo "start mysql service"
-systemctl mysqld start
+systemctl start mysqld
 
 echo "init the mysql"
 mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"

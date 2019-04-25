@@ -7,26 +7,40 @@ pipeline {
 
   }
   stages {
-    stage('install') {
+    stage('service_start') {
       steps {
-        echo 'Start to install the env'
+        echo 'Start the services'
+        sh '''echo "start the php-fpm service"
+systemctl start php72-php-fpm.service
+
+echo "start mysql service"
+systemctl start mysqld
+
+echo "init the mysql"
+mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"
+mysql -e "CREATE DATABASE IF NOT EXISTS travis;"'''
+      }
+    }
+    stage('Installing') {
+      steps {
+        echo 'Start to test the application'
         sh '''composer self-update
-composer install --prefer-dist --optimize-autoloader
-mysql -e \'CREATE DATABASE IF NOT EXISTS travis;\'
+composer install
+
 cp .env.travis .env
+
 php artisan migrate
 php artisan test:initTest'''
       }
     }
-    stage('testing') {
+    stage('Testing') {
       steps {
-        echo 'Start to test the application'
-        sh 'if [ "$TEST_SUITE" = "Testing" ]; then vendor/bin/phpunit -c phpunit.xml; fi;'
+        sh 'vendor/bin/phpunit -c phpunit.xml'
       }
     }
-    stage('packingUP') {
+    stage('PackUP') {
       steps {
-        archiveArtifacts(onlyIfSuccessful: true, excludes: '--exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"     --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"     --exclude="./.git" --exclude="./vendor" ', artifacts: 'TouHouUC')
+        archiveArtifacts(artifacts: 'TouHouUC', defaultExcludes: true, onlyIfSuccessful: true, excludes: '--exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"     --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"     --exclude="./.git" --exclude="./vendor" ')
       }
     }
   }

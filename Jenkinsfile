@@ -10,15 +10,23 @@ pipeline {
     stage('service_start') {
       steps {
         echo 'Start the services'
-        sh '''echo "start the php-fpm service"
-systemctl start php72-php-fpm.service
+        sh '''#!/usr/bin/env bash
+# init
+echo "init..."
+/usr/sbin/init
+
+echo "start the php-fpm service"
+serivce php72-php-fpm.service start
 
 echo "start mysql service"
-systemctl start mysqld
+serivce mysqld start
 
 echo "init the mysql"
 mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"
-mysql -e "CREATE DATABASE IF NOT EXISTS travis;"'''
+mysql -e "CREATE DATABASE IF NOT EXISTS travis;"
+
+echo "using the bash..."
+/bin/bash'''
       }
     }
     stage('Installing') {

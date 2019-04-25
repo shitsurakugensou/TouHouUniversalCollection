@@ -20,8 +20,7 @@ echo "start mysql service"
 systemctl start mysqld
 
 echo "init the mysql"
-/usr/bin/mysqladmin password
-/usr/bin/mysqladmin create travis'''
+mysql -e \'CREATE DATABASE IF NOT EXISTS travis;\' -uroot -p password'''
       }
     }
     stage('Installing') {

@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'yuyuko/jenkinsci-laravel-docker'
-      args '--privileged=true'
+      args '--privileged'
     }
 
   }

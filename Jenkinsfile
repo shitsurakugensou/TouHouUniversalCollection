@@ -17,7 +17,7 @@ echo "start the php-fpm service"
 systemctl start php72-php-fpm
 
 echo "start mysql service"
-/usr/local/mysql/bin/mysqld_safe --skip-grant-tables &
+mysqld_safe --skip-grant-tables &
 
 echo "init the mysql"
 mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"

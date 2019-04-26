@@ -13,14 +13,7 @@ pipeline {
         sh '''#!/usr/bin/env bash
 
 echo "start the php-fpm service"
-systemctl start php-fpm
-
-echo "start mysql service"
-systemctl start mysqld
-systemctl status mysqld.service
-
-echo "init the mysql"
-mysql -e \'CREATE DATABASE IF NOT EXISTS travis;\''''
+systemctl start php-fpm'''
       }
     }
     stage('Installing') {

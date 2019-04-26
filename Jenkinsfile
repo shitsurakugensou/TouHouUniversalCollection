@@ -43,7 +43,7 @@ php artisan test:initTest'''
     }
     stage('PackUP') {
       steps {
-        archiveArtifacts(artifacts: 'TouHouUC', defaultExcludes: true, onlyIfSuccessful: true, excludes: '--exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"     --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"     --exclude="./.git" --exclude="./vendor" ')
+        archiveArtifacts(artifacts: '*', defaultExcludes: true, onlyIfSuccessful: true, excludes: '--exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"     --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"     --exclude="./.git" --exclude="./vendor" ')
       }
     }
   }

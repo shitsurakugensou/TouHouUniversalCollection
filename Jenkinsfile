@@ -17,6 +17,7 @@ systemctl start php-fpm
 
 echo "start the mysql service"
 systemctl start mysqld
+journalctl -xe
 
 echo "initing the DB"
 mysql -uroot -psecret -e \'CREATE DATABASE IF NOT EXISTS jenkins;\'

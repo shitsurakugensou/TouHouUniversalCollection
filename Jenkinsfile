@@ -13,7 +13,14 @@ pipeline {
         sh '''#!/usr/bin/env bash
 
 echo "start the php-fpm service"
-systemctl start php-fpm'''
+systemctl start php-fpm
+
+echo "start the mysql service"
+systemctl start mysqld
+
+echo "initing the DB"
+mysql -e \'CREATE DATABASE IF NOT EXISTS jenkins;\'
+'''
       }
     }
     stage('Installing') {
@@ -22,7 +29,7 @@ systemctl start php-fpm'''
         sh '''composer self-update
 composer install
 
-cp .env.travis .env
+cp .env.jenkins .env
 
 php artisan migrate
 php artisan test:initTest'''

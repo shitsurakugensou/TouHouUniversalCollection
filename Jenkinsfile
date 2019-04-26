@@ -1,7 +1,8 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'Dockerfile'
+    docker {
+      image 'yuyuko/jenkinsci-laravel-docker'
+      args '--privileged=true --entrypoint /usr/sbin/init'
     }
 
   }
@@ -9,15 +10,10 @@ pipeline {
     stage('service_start') {
       steps {
         echo 'Start the services'
-        sh '''echo "start the php-fpm service"
-systemctl start php72-php-fpm.service
+        sh '''#!/usr/bin/env bash
 
-echo "start mysql service"
-systemctl start mysqld
-
-echo "init the mysql"
-mysql -e "create user \'travis\'@\'localhost\' identified by \'\';"
-mysql -e "CREATE DATABASE IF NOT EXISTS travis;"'''
+echo "start the php-fpm service"
+systemctl start php-fpm'''
       }
     }
     stage('Installing') {

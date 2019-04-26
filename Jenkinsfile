@@ -11,7 +11,6 @@ pipeline {
       steps {
         echo 'Start the services'
         sh '''#!/usr/bin/env bash
-docker run -it -d -e "container=docker" --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup yuyuko/jenkinsci-laravel-docker /usr/sbin/init
 
 echo "start the php-fpm service"
 systemctl start php-fpm

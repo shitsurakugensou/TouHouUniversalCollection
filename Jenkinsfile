@@ -19,7 +19,7 @@ echo "start the mysql service"
 systemctl start mysqld
 
 echo "initing the DB"
-mysql -e \'CREATE DATABASE IF NOT EXISTS jenkins;\'
+mysql -uroot -psecret -e \'CREATE DATABASE IF NOT EXISTS jenkins;\'
 '''
       }
     }

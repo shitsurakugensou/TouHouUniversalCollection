@@ -38,9 +38,7 @@ php artisan test:initTest'''
     }
     stage('PackingUP') {
       steps {
-        sh '''tar --exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"
-    --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"
-    --exclude="./.git" --exclude="./vendor"  -cvf TouHouUC.tar ./'''
+        sh 'tar --exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis" --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea" --exclude="./.git" --exclude="./vendor"  -cvf TouHouUC.tar ./'
         archiveArtifacts(onlyIfSuccessful: true, fingerprint: true, artifacts: 'TouHouUC.tar', allowEmptyArchive: true, excludes: '--exclude="./public/resources" --exclude="./Vagrantfile" --exclude="./.env.travis"     --exclude="./env" --exclude="./.vagrant" --exclude="./Homestead.yaml" --exclude="./.idea"     --exclude="./.git" --exclude="./vendor" ')
       }
     }

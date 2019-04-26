@@ -26,6 +26,8 @@ services:
   - mysql
 
 install:
+  - git config --global user.name "SaigyoujiYuyuko"
+  - git config --global user.email HGK-SaigyoujiYuyuko@outlook.com
   - travis_retry composer self-update
   - travis_retry composer install --prefer-dist --optimize-autoloader
   - travis_retry mysql -e 'CREATE DATABASE IF NOT EXISTS travis;'

@@ -13,3 +13,4 @@ yarn-error.log
 /public/resources/tools/*
 /public/resources/lanCraft/*
 /public/resources/tutorial/*
+public/resources/ex_games.json

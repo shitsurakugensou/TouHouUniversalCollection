@@ -14,3 +14,4 @@ yarn-error.log
 /public/resources/lanCraft/*
 /public/resources/tutorial/*
 public/resources/ex_games.json
+.idea/workspace.xml

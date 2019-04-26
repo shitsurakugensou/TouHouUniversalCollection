@@ -19,7 +19,7 @@ echo "start mysql service"
 systemctl start mysqld
 
 echo "init the mysql"
-mysql -e \'CREATE DATABASE IF NOT EXISTS travis;\' -uroot'''
+mysql --initialize-insecure -e \'CREATE DATABASE IF NOT EXISTS travis;\''''
       }
     }
     stage('Installing') {
